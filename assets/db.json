@@ -1,0 +1,10 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "huevos",
+      "contenido": "30",
+      "peso": "gramos"
+    }
+  ]
+}
