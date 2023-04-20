@@ -2,9 +2,65 @@
   "productos": [
     {
       "id": "1",
-      "nombre": "huevos",
-      "contenido": "30",
-      "peso": "gramos"
+      "nombre": "Lenteja Diana",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": 3700,
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
+      "categoria": "despensa"
+    },
+    {
+      "id": "2",
+      "nombre": "Sal Refisal bolsa",
+      "contenidoNeto": "1000",
+      "peso": "gramos",
+      "precio": 1800,
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
+      "categoria": "despensa"
+    },
+    {
+      "id": "3",
+      "nombre": "Harina PAN maíz blanco",
+      "contenidoNeto": "1000",
+      "peso": "gramos",
+      "precio": 3900,
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185701-300-300?v=1768361054&width=300&height=300&aspect=true",
+      "categoria": "despensa"
+    },
+    {
+      "id": "4",
+      "nombre": "Aceite Premier girasol",
+      "contenidoNeto": "3000",
+      "peso": "mililitros",
+      "precio": 52000,
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192258-300-300?v=1768361070&width=300&height=300&aspect=true",
+      "categoria": "despensa"
+    },
+    {
+      "id": "5",
+      "nombre": "Garbanzo Maritza premium",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": 3400,
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/365823-300-300?v=1768360822&width=300&height=300&aspect=true",
+      "categoria": "despensa"
+    },
+    {
+      "id": "6",
+      "nombre": "Avena Toning en hojuelas ",
+      "contenidoNeto": "1000",
+      "peso": "gramos",
+      "precio": 6800,
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/191169-300-300?v=1768361015&width=300&height=300&aspect=true",
+      "categoria": "despensa"
     }
+  ],
+  "favoritos":[
+  ],
+  "carrito":[
+
+  ],
+  "usuario":[
+    
   ]
 }
