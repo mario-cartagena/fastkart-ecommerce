@@ -26,21 +26,21 @@
     <title>Fastkart</title>
   </head>
   <body>
-    <!-- Header Start -->
+    <!-- Header -->
     <header class="pb-md-4 pb-0">
       <!-- Header Top -->
-      <div class="header-top">
+      <div class="header__top">
         <div class="container-fluid-lg">
           <div class="row">
-            <div class="col-lg-9 d-lg-block d-none">
+            <div class="col-lg-9 d-lg-flex align-items-center">  
               <h6>
-                <strong class="me-1 text-white">Bienvenido a Fastkart!</strong>
+                <strong class="me-1 text-white">Welcome to Fastkart!</strong>
               </h6>
             </div>
             <div class="col-lg-3">
-              <ul class="about-list list-unstyled">
+              <ul class="header__list list-unstyled">
                 <li>
-                  <div class="dropdown theme-form-select">
+                  <div class="dropdown header__select">
                     <button
                       class="btn dropdown-toggle"
                       type="button"
@@ -57,7 +57,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="dropdown theme-form-select">
+                  <div class="dropdown header__select">
                     <button
                       class="btn dropdown-toggle"
                       type="button"
@@ -73,21 +73,16 @@
           </div>
         </div>
       </div>
-      <!-- Header Top End -->
-      <div class="top-nav top-header sticky-header">
+      <!-- Header Middle -->
+      <div class="top-nav">
         <div class="container-fluid-lg">
           <div class="row">
             <div class="col-12">
               <div class="navbar-top">
-                <!-- <button class="navbar-toggler d-xl-none d-inline navbar-menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
-                                <span class="navbar-toggler-icon">
-                                    <i class="fa-solid fa-bars"></i>
-                                </span>
-                            </button> -->
-                <a href="index.html" class="web-logo nav-logo">
+                <a href="index.html" class="web-logo">
                   <img
                     src="./assets/images/logo/1.png"
-                    class="img-fluid blur-up lazyloaded"
+                    class="img-fluid"
                     alt="Logo Fastkart"
                   />
                 </a>
@@ -136,7 +131,7 @@
                     <li class="right-side">
                       <a
                         href="wishlist.html"
-                        class="btn p-0 position-relative header-wishlist"
+                        class="btn p-0 position-relative"
                       >
                         <i data-feather="heart"></i>
                       </a>
@@ -144,7 +139,7 @@
                     <li class="right-side">
                       <a
                         href="wishlist.html"
-                        class="btn p-0 position-relative header-wishlist"
+                        class="btn p-0 position-relative"
                       >
                         <i data-feather="shopping-cart"></i>
                       </a>
@@ -152,7 +147,7 @@
                     <li class="right-side">
                       <a
                         href="wishlist.html"
-                        class="btn p-0 position-relative header-wishlist"
+                        class="btn p-0 position-relative"
                       >
                         <i data-feather="user"></i>
                       </a>
@@ -175,561 +170,77 @@
                 </button>
               </div>
               <div class="header-nav-middle">
-                <div
-                  class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky"
-                >
+                <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
                   <div
                     class="offcanvas offcanvas-collapse order-xl-2"
                     id="primaryMenu"
                     style="visibility: hidden"
                     aria-hidden="true"
                   >
-                    <div class="offcanvas-header navbar-shadow">
-                      <h5>Menu</h5>
-                      <button
-                        class="btn-close lead"
-                        type="button"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="offcanvas-body">
                       <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                           <a
                             class="nav-link dropdown-toggle"
-                            href="javascript:void(0)"
+                            href="#"
                             data-bs-toggle="dropdown"
                             >Home</a
                           >
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="index.html"
-                                >Kartshop</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-2.html"
-                                >Sweetshop</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-3.html"
-                                >Organic</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-4.html"
-                                >Supershop</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-5.html"
-                                >Classic shop</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-6.html"
-                                >Furniture</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-7.html"
-                                >Search Oriented</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-8.html"
-                                >Category Focus</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="index-9.html"
-                                >Fashion</a
-                              >
-                            </li>
-                          </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                           <a
                             class="nav-link dropdown-toggle"
-                            href="javascript:void(0)"
+                            href="#"
                             data-bs-toggle="dropdown"
                             >Shop</a
                           >
-
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="shop-category-slider.html"
-                                >Shop Category Slider</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="shop-category.html"
-                                >Shop Category Sidebar</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="shop-banner.html"
-                                >Shop Banner</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="shop-left-sidebar.html"
-                                >Shop Left Sidebar</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="shop-list.html"
-                                >Shop List</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="shop-right-sidebar.html"
-                                >Shop Right Sidebar</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="shop-top-filter.html"
-                                >Shop Top Filter</a
-                              >
-                            </li>
-                          </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                           <a
                             class="nav-link dropdown-toggle"
-                            href="javascript:void(0)"
+                            href="#"
                             data-bs-toggle="dropdown"
                             >Product</a
                           >
-
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="product-4-image.html"
-                                >Product 4 Image</a
-                              >
-                            </li>
-                            <li class="sub-dropdown-hover">
-                              <a href="javascript:void(0)" class="dropdown-item"
-                                >Product Thumbnail</a
-                              >
-                              <ul class="sub-menu">
-                                <li>
-                                  <a href="product-left-thumbnail.html"
-                                    >Left Thumbnail</a
-                                  >
-                                </li>
-
-                                <li>
-                                  <a href="product-right-thumbnail.html"
-                                    >Right Thumbnail</a
-                                  >
-                                </li>
-
-                                <li>
-                                  <a href="product-bottom-thumbnail.html"
-                                    >Bottom Thumbnail</a
-                                  >
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a
-                                href="product-bundle.html"
-                                class="dropdown-item"
-                                >Product Bundle</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="product-slider.html"
-                                class="dropdown-item"
-                                >Product Slider</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="product-sticky.html"
-                                class="dropdown-item"
-                                >Product Sticky</a
-                              >
-                            </li>
-                          </ul>
                         </li>
 
                         <li class="nav-item dropdown dropdown-mega">
                           <a
                             class="nav-link dropdown-toggle ps-xl-2 ps-0"
-                            href="javascript:void(0)"
+                            href="#"
                             data-bs-toggle="dropdown"
                             >Mega Menu</a
                           >
-
-                          <div class="dropdown-menu dropdown-menu-2">
-                            <div class="row">
-                              <div class="dropdown-column col-xl-3">
-                                <h5 class="dropdown-header">
-                                  Daily Vegetables
-                                </h5>
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Beans & Brinjals</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Broccoli & Cauliflower</a
-                                >
-
-                                <a
-                                  href="shop-left-sidebar.html"
-                                  class="dropdown-item"
-                                  >Chilies, Garlic</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Vegetables & Salads</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Gourd, Cucumber</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Herbs & Sprouts</a
-                                >
-
-                                <a
-                                  href="demo-personal-portfolio.html"
-                                  class="dropdown-item"
-                                  >Lettuce & Leafy</a
-                                >
-                              </div>
-
-                              <div class="dropdown-column col-xl-3">
-                                <h5 class="dropdown-header">Baby Tender</h5>
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Beans & Brinjals</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Broccoli & Cauliflower</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Chilies, Garlic</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Vegetables & Salads</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Gourd, Cucumber</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Potatoes & Tomatoes</a
-                                >
-
-                                <a
-                                  href="shop-left-sidebar.html"
-                                  class="dropdown-item"
-                                  >Peas & Corn</a
-                                >
-                              </div>
-
-                              <div class="dropdown-column col-xl-3">
-                                <h5 class="dropdown-header">
-                                  Exotic Vegetables
-                                </h5>
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Asparagus & Artichokes</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Avocados & Peppers</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Broccoli & Zucchini</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Celery, Fennel & Leeks</a
-                                >
-
-                                <a
-                                  class="dropdown-item"
-                                  href="shop-left-sidebar.html"
-                                  >Chilies & Lime</a
-                                >
-                              </div>
-
-                              <div
-                                class="dropdown-column dropdown-column-img col-3"
-                              ></div>
-                            </div>
-                          </div>
                         </li>
 
                         <li class="nav-item dropdown">
                           <a
                             class="nav-link dropdown-toggle"
-                            href="javascript:void(0)"
+                            href="#"
                             data-bs-toggle="dropdown"
                             >Blog</a
                           >
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="blog-detail.html"
-                                >Blog Detail</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="blog-grid.html"
-                                >Blog Grid</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="blog-list.html"
-                                >Blog List</a
-                              >
-                            </li>
-                          </ul>
                         </li>
 
                         <li class="nav-item dropdown new-nav-item">
                           <a
                             class="nav-link dropdown-toggle"
-                            href="javascript:void(0)"
+                            href="#"
                             data-bs-toggle="dropdown"
                             >Pages</a
                           >
-                          <ul class="dropdown-menu">
-                            <li class="sub-dropdown-hover">
-                              <a class="dropdown-item" href="javascript:void(0)"
-                                >Email Template
-                                <span class="new-text"
-                                  ><i
-                                    class="fa-solid fa-bolt-lightning"
-                                  ></i></span
-                              ></a>
-                              <ul class="sub-menu">
-                                <li>
-                                  <a
-                                    href="../email-templete/abandonment-email.html"
-                                    >Abandonment</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    href="../email-templete/offer-template.html"
-                                    >Offer Template</a
-                                  >
-                                </li>
-                                <li>
-                                  <a href="../email-templete/order-success.html"
-                                    >Order Success</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    href="../email-templete/reset-password.html"
-                                    >Reset Password</a
-                                  >
-                                </li>
-                                <li>
-                                  <a href="../email-templete/welcome.html"
-                                    >Welcome template</a
-                                  >
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="sub-dropdown-hover">
-                              <a class="dropdown-item" href="javascript:void(0)"
-                                >Invoice Template
-                                <span class="new-text"
-                                  ><i
-                                    class="fa-solid fa-bolt-lightning"
-                                  ></i></span
-                              ></a>
-                              <ul class="sub-menu">
-                                <li>
-                                  <a href="../invoice/invoice-1.html"
-                                    >Invoice 1</a
-                                  >
-                                </li>
-
-                                <li>
-                                  <a href="../invoice/invoice-2.html"
-                                    >Invoice 2</a
-                                  >
-                                </li>
-
-                                <li>
-                                  <a href="../invoice/invoice-3.html"
-                                    >Invoice 3</a
-                                  >
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="404.html">404</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="about-us.html"
-                                >About Us</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="cart.html">Cart</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="contact-us.html"
-                                >Contact</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="checkout.html"
-                                >Checkout</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="coming-soon.html"
-                                >Coming Soon</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="compare.html"
-                                >Compare</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="faq.html">Faq</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="order-success.html"
-                                >Order Success</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="order-tracking.html"
-                                >Order Tracking</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="otp.html">OTP</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="search.html"
-                                >Search</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="user-dashboard.html"
-                                >User Dashboard</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="wishlist.html"
-                                >Wishlist</a
-                              >
-                            </li>
-                          </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                           <a
                             class="nav-link dropdown-toggle"
-                            href="javascript:void(0)"
+                            href="#"
                             data-bs-toggle="dropdown"
                             >Seller</a
                           >
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="seller-become.html"
-                                >Become a Seller</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="seller-dashboard.html"
-                                >Seller Dashboard</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="seller-detail.html"
-                                >Seller Detail</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="seller-detail-2.html"
-                                >Seller Detail 2</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="seller-grid.html"
-                                >Seller Grid</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="seller-grid-2.html"
-                                >Seller Grid 2</a
-                              >
-                            </li>
-                          </ul>
                         </li>
                       </ul>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -914,15 +425,16 @@
     <section class="products">
       <div class="container-fluid-lg">
         <div class="row g-sm-4 g-3">
+          <!-- Categorías -->
           <div class="col-xxl-3 col-xl-4 d-none d-xl-block">
             <div class="category-menu">
               <h3>Category</h3>
-              <ul class="list-unstyled">
+              <ul class="list-unstyled container__categories">
                 <li>
                   <div class="category-list">
                     <img src="./assets/images/svg/1/vegetable.svg" />
                     <h5>
-                      <a href="#">Vegetables & Fruit</a>
+                      <a href="#" class="btn__categories">Frutas & Verduras</a>
                     </h5>
                   </div>
                 </li>
@@ -930,7 +442,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/cup.svg" />
                     <h5>
-                      <a href="#">Beverages</a>
+                      <a href="#" class="btn__categories">Despensa</a>
                     </h5>
                   </div>
                 </li>
@@ -938,7 +450,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/meats.svg" />
                     <h5>
-                      <a href="#">Meats & Seafood</a>
+                      <a href="#" class="btn__categories">Meats & Seafood</a>
                     </h5>
                   </div>
                 </li>
@@ -946,7 +458,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/breakfast.svg" />
                     <h5>
-                      <a href="#">Breakfast & Dairy</a>
+                      <a href="#" class="btn__categories">Breakfast & Dairy</a>
                     </h5>
                   </div>
                 </li>
@@ -954,7 +466,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/frozen.svg" />
                     <h5>
-                      <a href="#">Frozen Foods</a>
+                      <a href="#" class="btn__categories">Frozen Foods</a>
                     </h5>
                   </div>
                 </li>
@@ -962,7 +474,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/biscuit.svg" />
                     <h5>
-                      <a href="#">Biscuits & Snacks</a>
+                      <a href="#" class="btn__categories">Biscuits & Snacks</a>
                     </h5>
                   </div>
                 </li>
@@ -970,7 +482,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/grocery.svg" />
                     <h5>
-                      <a href="#">Grocery & Staples</a>
+                      <a href="#" class="btn__categories">Grocery & Staples</a>
                     </h5>
                   </div>
                 </li>
@@ -978,7 +490,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/drink.svg" />
                     <h5>
-                      <a href="#">Wines & Alcohol Drinks</a>
+                      <a href="#" class="btn__categories">Wines & Alcohol Drinks</a>
                     </h5>
                   </div>
                 </li>
@@ -986,7 +498,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/milk.svg" />
                     <h5>
-                      <a href="#">Milk & Dairies</a>
+                      <a href="#" class="btn__categories">Milk & Dairies</a>
                     </h5>
                   </div>
                 </li>
@@ -994,7 +506,7 @@
                   <div class="category-list">
                     <img src="./assets/images/svg/1/pet.svg" />
                     <h5>
-                      <a href="#">Pet Foods</a>
+                      <a href="#" class="btn__categories">Pet Foods</a>
                     </h5>
                   </div>
                 </li>
@@ -1016,10 +528,10 @@
                 week.
               </p>
             </div>
+            <!-- Tabla Productos -->
             <div class="row m-0 row-product">
-              <div class="col-4 col-product">
+              <!-- <div class="col-4 col-product">
                 <div class="product-box border-row">
-                  <!-- Aqui se pintan los productos -->
                   <div class="product-image">
                     <a href="product-left-thumbnail.html">
                       <img
@@ -1028,7 +540,7 @@
                         alt=""
                       />
                     </a>
-                    <ul class="product-option">
+                    <div class="product-option">
                       <li
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
@@ -1062,7 +574,7 @@
                           <i data-feather="heart"></i>
                         </a>
                       </li>
-                    </ul>
+                    </div>
                   </div>
                   <div class="product-detail">
                     <a href="product-left-thumbnail.html">
@@ -1118,7 +630,7 @@
                         title="View"
                       >
                         <a
-                          href="javascript:void(0)"
+                          href="#"
                           data-bs-toggle="modal"
                           data-bs-target="#view"
                         >
@@ -1201,92 +713,7 @@
                         title="View"
                       >
                         <a
-                          href="javascript:void(0)"
-                          data-bs-toggle="modal"
-                          data-bs-target="#view"
-                        >
-                          <i data-feather="eye"></i>
-                        </a>
-                      </li>
-
-                      <li
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="Compare"
-                      >
-                        <a href="compare.html">
-                          <i data-feather="refresh-cw"></i>
-                        </a>
-                      </li>
-
-                      <li
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="Wishlist"
-                      >
-                        <a href="wishlist.html" class="notifi-wishlist">
-                          <i data-feather="heart"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-detail">
-                    <a href="product-left-thumbnail.html">
-                      <h6 class="name">Fantasy Crunchy Choco Chip Cookies</h6>
-                    </a>
-
-                    <h5 class="sold text-content">
-                      <span class="theme-color price">$26.69</span>
-                    </h5>
-
-                    <div>
-                      <ul class="rating">
-                        <li>
-                          <i data-feather="star" class="fill"></i>
-                        </li>
-                        <li>
-                          <i data-feather="star" class="fill"></i>
-                        </li>
-                        <li>
-                          <i data-feather="star" class="fill"></i>
-                        </li>
-                        <li>
-                          <i data-feather="star" class="fill"></i>
-                        </li>
-                        <li>
-                          <i data-feather="star"></i>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="add-to-cart-box">
-                      <button class="btn btn-add-cart addcart-button">
-                        Add
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row m-0 row-product">
-              <div class="col-4 col-product">
-                <div class="product-box border-row">
-                  <div class="product-image">
-                    <a href="product-left-thumbnail.html">
-                      <img
-                        src="./assets/images/vegetable/product/1.png"
-                        class="img-fluid blur-up lazyload"
-                        alt=""
-                      />
-                    </a>
-                    <ul class="product-option">
-                      <li
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="View"
-                      >
-                        <a
-                          href="javascript:void(0)"
+                          href="#"
                           data-bs-toggle="modal"
                           data-bs-target="#view"
                         >
@@ -1369,7 +796,7 @@
                         title="View"
                       >
                         <a
-                          href="javascript:void(0)"
+                          href="#"
                           data-bs-toggle="modal"
                           data-bs-target="#view"
                         >
@@ -1452,7 +879,7 @@
                         title="View"
                       >
                         <a
-                          href="javascript:void(0)"
+                          href="#"
                           data-bs-toggle="modal"
                           data-bs-target="#view"
                         >
@@ -1509,6 +936,7 @@
                         </li>
                       </ul>
                     </div>
+
                     <div class="add-to-cart-box">
                       <button class="btn btn-add-cart addcart-button">
                         Add
@@ -1517,6 +945,89 @@
                   </div>
                 </div>
               </div>
+              <div class="col-4 col-product">
+                <div class="product-box border-row">
+                  <div class="product-image">
+                    <a href="product-left-thumbnail.html">
+                      <img
+                        src="./assets/images/vegetable/product/1.png"
+                        class="img-fluid blur-up lazyload"
+                        alt=""
+                      />
+                    </a>
+                    <ul class="product-option">
+                      <li
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="View"
+                      >
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view"
+                        >
+                          <i data-feather="eye"></i>
+                        </a>
+                      </li>
+
+                      <li
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Compare"
+                      >
+                        <a href="compare.html">
+                          <i data-feather="refresh-cw"></i>
+                        </a>
+                      </li>
+
+                      <li
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Wishlist"
+                      >
+                        <a href="wishlist.html" class="notifi-wishlist">
+                          <i data-feather="heart"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product-detail">
+                    <a href="product-left-thumbnail.html">
+                      <h6 class="name">Fantasy Crunchy Choco Chip Cookies</h6>
+                    </a>
+
+                    <h5 class="sold text-content">
+                      <span class="theme-color price">$26.69</span>
+                    </h5>
+
+                    <div>
+                      <ul class="rating">
+                        <li>
+                          <i data-feather="star" class="fill"></i>
+                        </li>
+                        <li>
+                          <i data-feather="star" class="fill"></i>
+                        </li>
+                        <li>
+                          <i data-feather="star" class="fill"></i>
+                        </li>
+                        <li>
+                          <i data-feather="star" class="fill"></i>
+                        </li>
+                        <li>
+                          <i data-feather="star"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="add-to-cart-box">
+                      <button class="btn btn-add-cart addcart-button">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -1524,171 +1035,215 @@
     </section>
 
     <footer class="section-t-space">
-        <div class="container-fluid-lg">
-            <div class="main-footer section-b-space section-t-space">
-                <div class="row g-md-4 g-3">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="footer-logo">
-                            <div class="theme-logo">
-                                <a href="index.html">
-                                    <img src="./assets/images/logo/1.png" class="blur-up lazyload" alt="Logo Fastkart">
-                                </a>
-                            </div>
-                            <div class="footer-logo-contain">
-                                <p>We are a friendly bar serving a variety of cocktails, wines and beers. Our bar is a
-                                    perfect place for a couple.</p>
-
-                                <ul class="address">
-                                    <li>
-                                        <i data-feather="home"></i>
-                                        <a href="#">1418 Riverwood Drive, CA 96052, US</a>
-                                    </li>
-                                    <li>
-                                        <i data-feather="mail"></i>
-                                        <a href="#">support@fastkart.com</a>
-                                    </li>
-                                </ul>
-                                <div class="reserve mt-5">
-                                  <h6 class="text-content">©2022 Fastkart All rights reserved</h6>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="footer-title">
-                            <h4>Categories</h4>
-                        </div>
-
-                        <div class="footer-contain">
-                            <ul>
-                                <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Vegetables & Fruit</a>
-                                </li>
-                                <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Beverages</a>
-                                </li>
-                                <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Meats & Seafood</a>
-                                </li>
-                                <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Frozen Foods</a>
-                                </li>
-                                <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Biscuits & Snacks</a>
-                                </li>
-                                <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Grocery & Staples</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-xl col-lg-2 col-sm-3">
-                        <div class="footer-title">
-                            <h4>Useful Links</h4>
-                        </div>
-
-                        <div class="footer-contain">
-                            <ul>
-                                <li>
-                                    <a href="index.html" class="text-content">Home</a>
-                                </li>
-                                <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html" class="text-content">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="blog-list.html" class="text-content">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="contact-us.html" class="text-content">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-2 col-sm-3">
-                        <div class="footer-title">
-                            <h4>Help Center</h4>
-                        </div>
-
-                        <div class="footer-contain">
-                            <ul>
-                                <li>
-                                    <a href="order-success.html" class="text-content">Your Order</a>
-                                </li>
-                                <li>
-                                    <a href="user-dashboard.html" class="text-content">Your Account</a>
-                                </li>
-                                <li>
-                                    <a href="order-tracking.html" class="text-content">Track Order</a>
-                                </li>
-                                <li>
-                                    <a href="wishlist.html" class="text-content">Your Wishlist</a>
-                                </li>
-                                <li>
-                                    <a href="search.html" class="text-content">Search</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html" class="text-content">FAQ</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="footer-title">
-                            <h4>Contact Us</h4>
-                        </div>
-
-                        <div class="footer-contact">
-                            <ul>
-                                <li>
-                                    <div class="footer-number">
-                                        <i data-feather="phone"></i>
-                                        <div class="contact-number">
-                                            <h6 class="text-content">Hotline 24/7 :</h6>
-                                            <h5>+91 888 104 2340</h5>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="footer-number">
-                                        <i data-feather="mail"></i>
-                                        <div class="contact-number">
-                                            <h6 class="text-content">Email Address :</h6>
-                                            <h5>fastkart@hotmail.com</h5>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="social-app mb-0">
-                                    <h5 class="mb-2 text-content">Download App :</h5>
-                                    <ul>
-                                        <li class="mb-0">
-                                            <a href="https://play.google.com/store/apps" target="_blank">
-                                                <img src="./assets/images/playstore.svg" class="blur-up lazyload"
-                                                    alt="">
-                                            </a>
-                                        </li>
-                                        <li class="mb-0">
-                                            <a href="https://www.apple.com/in/app-store/" target="_blank">
-                                                <img src="./assets/images/appstore.svg" class="blur-up lazyload"
-                                                    alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+      <div class="container-fluid-lg">
+        <div class="main-footer section-b-space section-t-space">
+          <div class="row g-md-4 g-3">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="footer-logo">
+                <div class="theme-logo">
+                  <a href="index.html">
+                    <img
+                      src="./assets/images/logo/1.png"
+                      class="blur-up lazyload"
+                      alt="Logo Fastkart"
+                    />
+                  </a>
                 </div>
+                <div class="footer-logo-contain">
+                  <p>
+                    We are a friendly bar serving a variety of cocktails, wines
+                    and beers. Our bar is a perfect place for a couple.
+                  </p>
+
+                  <ul class="address">
+                    <li>
+                      <i data-feather="home"></i>
+                      <a href="#">1418 Riverwood Drive, CA 96052, US</a>
+                    </li>
+                    <li>
+                      <i data-feather="mail"></i>
+                      <a href="#">support@fastkart.com</a>
+                    </li>
+                  </ul>
+                  <div class="reserve mt-5">
+                    <h6 class="text-content">
+                      ©2022 Fastkart All rights reserved
+                    </h6>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+              <div class="footer-title">
+                <h4>Categories</h4>
+              </div>
+
+              <div class="footer-contain">
+                <ul>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Vegetables & Fruit</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Beverages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Meats & Seafood</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Frozen Foods</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Biscuits & Snacks</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Grocery & Staples</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl col-lg-2 col-sm-3">
+              <div class="footer-title">
+                <h4>Useful Links</h4>
+              </div>
+
+              <div class="footer-contain">
+                <ul>
+                  <li>
+                    <a href="index.html" class="text-content">Home</a>
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Shop</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about-us.html" class="text-content">About Us</a>
+                  </li>
+                  <li>
+                    <a href="blog-list.html" class="text-content">Blog</a>
+                  </li>
+                  <li>
+                    <a href="contact-us.html" class="text-content"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-sm-3">
+              <div class="footer-title">
+                <h4>Help Center</h4>
+              </div>
+
+              <div class="footer-contain">
+                <ul>
+                  <li>
+                    <a href="order-success.html" class="text-content"
+                      >Your Order</a
+                    >
+                  </li>
+                  <li>
+                    <a href="user-dashboard.html" class="text-content"
+                      >Your Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="order-tracking.html" class="text-content"
+                      >Track Order</a
+                    >
+                  </li>
+                  <li>
+                    <a href="wishlist.html" class="text-content"
+                      >Your Wishlist</a
+                    >
+                  </li>
+                  <li>
+                    <a href="search.html" class="text-content">Search</a>
+                  </li>
+                  <li>
+                    <a href="faq.html" class="text-content">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="footer-title">
+                <h4>Contact Us</h4>
+              </div>
+
+              <div class="footer-contact">
+                <ul>
+                  <li>
+                    <div class="footer-number">
+                      <i data-feather="phone"></i>
+                      <div class="contact-number">
+                        <h6 class="text-content">Hotline 24/7 :</h6>
+                        <h5>+91 888 104 2340</h5>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="footer-number">
+                      <i data-feather="mail"></i>
+                      <div class="contact-number">
+                        <h6 class="text-content">Email Address :</h6>
+                        <h5>fastkart@hotmail.com</h5>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="social-app mb-0">
+                    <h5 class="mb-2 text-content">Download App :</h5>
+                    <ul>
+                      <li class="mb-0">
+                        <a
+                          href="https://play.google.com/store/apps"
+                          target="_blank"
+                        >
+                          <img
+                            src="./assets/images/playstore.svg"
+                            class="blur-up lazyload"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="mb-0">
+                        <a
+                          href="https://www.apple.com/in/app-store/"
+                          target="_blank"
+                        >
+                          <img
+                            src="./assets/images/appstore.svg"
+                            class="blur-up lazyload"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- Index.js -->
     <script src="./scripts/index.js" type="module"></script>

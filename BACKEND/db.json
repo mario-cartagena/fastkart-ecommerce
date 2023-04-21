@@ -2,57 +2,111 @@
   "productos": [
     {
       "id": "1",
-      "nombre": "Lenteja Diana",
+      "nombre": "Lenteja Diana x 500gr",
       "contenidoNeto": "500",
       "peso": "gramos",
-      "precio": 3700,
+      "precio": "3.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
-      "categoria": "despensa"
+      "categoria": "Despensa"
     },
     {
       "id": "2",
-      "nombre": "Sal Refisal bolsa",
+      "nombre": "Sal Refisal bolsa x 1000gr",
       "contenidoNeto": "1000",
       "peso": "gramos",
-      "precio": 1800,
+      "precio": "1.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
-      "categoria": "despensa"
+      "categoria": "Despensa"
     },
     {
       "id": "3",
-      "nombre": "Harina PAN maíz blanco",
+      "nombre": "Harina PAN maíz blanco x 1000gr",
       "contenidoNeto": "1000",
       "peso": "gramos",
-      "precio": 3900,
+      "precio": "3.900",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185701-300-300?v=1768361054&width=300&height=300&aspect=true",
-      "categoria": "despensa"
+      "categoria": "Despensa"
     },
     {
       "id": "4",
-      "nombre": "Aceite Premier girasol",
+      "nombre": "Aceite Premier girasol x 3000ml",
       "contenidoNeto": "3000",
       "peso": "mililitros",
-      "precio": 52000,
+      "precio": "52.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192258-300-300?v=1768361070&width=300&height=300&aspect=true",
-      "categoria": "despensa"
+      "categoria": "Despensa"
     },
     {
       "id": "5",
-      "nombre": "Garbanzo Maritza premium",
+      "nombre": "Garbanzo Maritza premium x 500gr",
       "contenidoNeto": "500",
       "peso": "gramos",
-      "precio": 3400,
+      "precio": "3.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/365823-300-300?v=1768360822&width=300&height=300&aspect=true",
-      "categoria": "despensa"
+      "categoria": "Despensa"
     },
     {
       "id": "6",
-      "nombre": "Avena Toning en hojuelas ",
+      "nombre": "Avena Toning en hojuelas x 1000gr",
       "contenidoNeto": "1000",
       "peso": "gramos",
-      "precio": 6800,
+      "precio": "6.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/191169-300-300?v=1768361015&width=300&height=300&aspect=true",
-      "categoria": "despensa"
+      "categoria": "Despensa"
+    },
+    {
+      "id": "7",
+      "nombre": "Banano Urabá x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "1.590",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205432-300-300?v=1768430086&width=300&height=300&aspect=true",
+      "categoria": "Frutas & Verduras"
+    },
+    {
+      "id": "8",
+      "nombre": "Tomate chonto x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "2.440",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204905-300-300?v=1768429760&width=300&height=300&aspect=true",
+      "categoria": "Frutas & Verduras"
+    },
+    {
+      "id": "9",
+      "nombre": "Cebolla cabezona x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "2.240",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205433-300-300?v=1768429608&width=300&height=300&aspect=true",
+      "categoria": "Frutas & Verduras"
+    },
+    {
+      "id": "10",
+      "nombre": "Plátano llanero x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "3.840",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203191-300-300?v=1768429748&width=300&height=300&aspect=true",
+      "categoria": "Frutas & Verduras"
+    },
+    {
+      "id": "11",
+      "nombre": "Granadilla x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "8.750",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204068-300-300?v=1768428528&width=300&height=300&aspect=true",
+      "categoria": "Frutas & Verduras"
+    },
+    {
+      "id": "12",
+      "nombre": "Naranja Tangelo x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "3.750",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203143-300-300?v=1768430087&width=300&height=300&aspect=true",
+      "categoria": "Frutas & Verduras"
     }
   ],
   "favoritos":[
