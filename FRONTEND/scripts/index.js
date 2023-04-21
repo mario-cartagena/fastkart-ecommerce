@@ -9,9 +9,30 @@ const getProducts = async (url) => {
       return data;
     } catch (error) {
       console.log(error);
+      return [];
     }
 };
 
+const getProductsFavorites = async (url) => {
+  try {
+    const {data} = await axios.get(url+"favoritos"); //desestructuración de objetos
+    console.log(data)
+    return data;
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
+};
+
+const postProducts = async (url, product) => {
+    try {
+      const {data} = await axios.post(url+"favoritos", product); //desestructuración de objetos
+      return data;
+    } catch (error) {
+      console.log(error);
+      return [];
+    }
+};
 
 const printProducts = (products, container) => {
   container.innerHTML = '';
@@ -38,7 +59,7 @@ const printProducts = (products, container) => {
                           data-bs-toggle="modal"
                           data-bs-target="#view"
                         >
-                          <i data-feather="eye"></i>
+                        <span class="material-symbols-outlined">visibility</span>
                         </a>
                       </li>
 
@@ -48,7 +69,7 @@ const printProducts = (products, container) => {
                         title="Compare"
                       >
                         <a href="#">
-                          <i data-feather="refresh-cw"></i>
+                        <span class="material-symbols-outlined">cached</span>
                         </a>
                       </li>
 
@@ -57,8 +78,8 @@ const printProducts = (products, container) => {
                         data-bs-placement="top"
                         title="Wishlist"
                       >
-                        <a href="#" class="notifi-wishlist">
-                          <i data-feather="heart"></i>
+                        <a href="#" class="notifi-wishlist" data-button="btn__favorite">
+                        <span class="material-symbols-outlined" data-id=${product.id} data-button="btn__favorite">favorite</span>
                         </a>
                       </li>
                     </ul>
@@ -106,10 +127,10 @@ const printProducts = (products, container) => {
 
 const filterByCategory = (products, event) =>{
         if(event.target.classList.contains("btn__categories")){
-          const categoria = event.target.parentElement;
-          const nombreCategoria = categoria.querySelector("a").textContent;
+          const category = event.target.parentElement;
+          const nameCategory = category.querySelector("a").textContent;
           const productsFilter = products.filter((elemento) =>  {
-            return elemento.categoria.includes(nombreCategoria)
+            return elemento.categoria.includes(nameCategory)
          });
           printProducts(productsFilter, containerProducts);
         }
@@ -119,9 +140,31 @@ const filterByCategory = (products, event) =>{
 document.addEventListener("DOMContentLoaded", async () => {
     const productos = await getProducts(URL_API);
     printProducts(productos, containerProducts);
+    // await getProductsFavorites(URL_API);
 });
 
 document.addEventListener("click", async(event) => {
         const productos = await getProducts(URL_API);
         filterByCategory(productos, event);
-    });
+});
+
+// Add click event to save to favorites
+document.addEventListener('click', async(event) => {
+  const productos = await getProducts(URL_API);
+  const favoritos = await getProductsFavorites(URL_API);
+  console.log(favoritos)
+  const productId = event.target.getAttribute("data-id")
+  const buttonFavorite = event.target.getAttribute("data-button")
+  if (buttonFavorite) {
+      if (favoritos.find(item => item.id == productId)) {
+         alert('¡ya se encuentra en favoritos!');
+      } else {
+        const arrayProduct = productos.find(item => item.id == productId);
+        console.log(arrayProduct)
+         await postProducts(URL_API, arrayProduct)
+         // Mostrar notificación de SweetAlert
+         alert('¡Producto agregado!');
+      }
+          
+  }
+});

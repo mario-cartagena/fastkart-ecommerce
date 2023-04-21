@@ -540,14 +540,36 @@
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/199911-300-300?v=1768497509&width=300&height=300&aspect=true",
       "categoria": "Alimentos para Mascostas"
     }
-    
   ],
-  "favoritos":[
+  "favoritos": [
+    {
+      "id": "35",
+      "nombre": "Papas a la francesa prefreidas y congeladas x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "6.340",
+      "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/1831327-500-auto?v=1768493647&width=500&height=auto&aspect=true",
+      "categoria": "Alimentos Congelados"
+    },
+    {
+      "id": "1",
+      "nombre": "Lenteja Diana x 500gr",
+      "contenidoNeto": "500",
+      "peso": "gramos",
+      "precio": "3.700",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
+      "categoria": "Despensa"
+    },
+    {
+      "id": "2",
+      "nombre": "Sal Refisal bolsa x 1000gr",
+      "contenidoNeto": "1000",
+      "peso": "gramos",
+      "precio": "1.800",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
+      "categoria": "Despensa"
+    }
   ],
-  "carrito":[
-
-  ],
-  "usuario":[
-    
-  ]
+  "carrito": [],
+  "usuario": []
 }
