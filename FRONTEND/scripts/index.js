@@ -1,6 +1,6 @@
 // --------------------- Variables ------------------------
 const URL_API = "http://localhost:3000/";
-const containerProducts = document.querySelector(".row-product");
+const containerProducts = document.querySelector(".productContainer");
 
 // --------------------- Funciones ------------------------
 const getProducts = async (url) => {
@@ -14,6 +14,7 @@ const getProducts = async (url) => {
 
 
 const printProducts = (products, container) => {
+  container.innerHTML = '';
     products.forEach(product => {
         container.innerHTML += `
         <div class="col-4 col-product">
@@ -103,26 +104,24 @@ const printProducts = (products, container) => {
     }); 
 };
 
-const filterByCategory = (products) =>{
-  const categorias = document.querySelector(".container__categories");
-  console.log(categorias);
-  
-  categorias.addEventListener("click", (e) => {
-          if(e.target.classList.contains("btn__categories")){
-            const categoria = e.target.parentElement;
-            const nombreCategoria = categoria.querySelector("a").textContent;
-            console.log(nombreCategoria)
-            const categoriasFiltrada = products.filter((elemento) => elemento.categoria === nombreCategoria);
-            console.log(categoriasFiltrada)
-          }
-      });
-  
+const filterByCategory = (products, event) =>{
+        if(event.target.classList.contains("btn__categories")){
+          const categoria = event.target.parentElement;
+          const nombreCategoria = categoria.querySelector("a").textContent;
+          const productsFilter = products.filter((elemento) =>  {
+            return elemento.categoria.includes(nombreCategoria)
+         });
+          printProducts(productsFilter, containerProducts);
+        }
   }
 
 // --------------------- Ejecución ------------------------
 document.addEventListener("DOMContentLoaded", async () => {
     const productos = await getProducts(URL_API);
-    console.log(productos)
     printProducts(productos, containerProducts);
-    filterByCategory(productos);
 });
+
+document.addEventListener("click", async(event) => {
+        const productos = await getProducts(URL_API);
+        filterByCategory(productos, event);
+    });
