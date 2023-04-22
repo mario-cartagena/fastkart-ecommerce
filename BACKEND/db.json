@@ -4,7 +4,7 @@
       "id": "1",
       "nombre": "Lenteja Diana x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "3.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
       "categoria": "Despensa"
@@ -13,7 +13,7 @@
       "id": "2",
       "nombre": "Sal Refisal bolsa x 1000gr",
       "contenidoNeto": "1000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "1.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
       "categoria": "Despensa"
@@ -22,7 +22,7 @@
       "id": "3",
       "nombre": "Harina PAN maíz blanco x 1000gr",
       "contenidoNeto": "1000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "3.900",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185701-300-300?v=1768361054&width=300&height=300&aspect=true",
       "categoria": "Despensa"
@@ -31,7 +31,7 @@
       "id": "4",
       "nombre": "Aceite Premier girasol x 3000ml",
       "contenidoNeto": "3000",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "52.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192258-300-300?v=1768361070&width=300&height=300&aspect=true",
       "categoria": "Despensa"
@@ -40,7 +40,7 @@
       "id": "5",
       "nombre": "Garbanzo Maritza premium x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "3.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/365823-300-300?v=1768360822&width=300&height=300&aspect=true",
       "categoria": "Despensa"
@@ -49,7 +49,7 @@
       "id": "6",
       "nombre": "Avena Toning en hojuelas x 1000gr",
       "contenidoNeto": "1000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "6.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/191169-300-300?v=1768361015&width=300&height=300&aspect=true",
       "categoria": "Despensa"
@@ -58,7 +58,7 @@
       "id": "7",
       "nombre": "Banano Urabá x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "1.590",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205432-300-300?v=1768430086&width=300&height=300&aspect=true",
       "categoria": "Frutas & Verduras"
@@ -67,7 +67,7 @@
       "id": "8",
       "nombre": "Tomate chonto x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "2.440",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204905-300-300?v=1768429760&width=300&height=300&aspect=true",
       "categoria": "Frutas & Verduras"
@@ -76,7 +76,7 @@
       "id": "9",
       "nombre": "Cebolla cabezona x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "2.240",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205433-300-300?v=1768429608&width=300&height=300&aspect=true",
       "categoria": "Frutas & Verduras"
@@ -85,7 +85,7 @@
       "id": "10",
       "nombre": "Plátano llanero x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "3.840",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203191-300-300?v=1768429748&width=300&height=300&aspect=true",
       "categoria": "Frutas & Verduras"
@@ -94,7 +94,7 @@
       "id": "11",
       "nombre": "Granadilla x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "8.750",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204068-300-300?v=1768428528&width=300&height=300&aspect=true",
       "categoria": "Frutas & Verduras"
@@ -103,7 +103,7 @@
       "id": "12",
       "nombre": "Naranja Tangelo x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "3.750",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203143-300-300?v=1768430087&width=300&height=300&aspect=true",
       "categoria": "Frutas & Verduras"
@@ -112,7 +112,7 @@
       "id": "13",
       "nombre": "Lomo de cerdo congelado en bandeja x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "12.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203840-300-300?v=1768491155&width=300&height=300&aspect=true",
       "categoria": "Carnes & Mariscos"
@@ -121,7 +121,7 @@
       "id": "14",
       "nombre": "Filete de Salmón Fresco x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "42.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203844-300-300?v=1768489874&width=300&height=300&aspect=true",
       "categoria": "Carnes & Mariscos"
@@ -130,7 +130,7 @@
       "id": "15",
       "nombre": "Pechuga de Pollo x 600gr",
       "contenidoNeto": "600",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "12.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204001-300-300?v=1768488408&width=300&height=300&aspect=true",
       "categoria": "Carnes & Mariscos"
@@ -139,7 +139,7 @@
       "id": "16",
       "nombre": "Camaron Tigre Frutos Del Mar x 700gr",
       "contenidoNeto": "700",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "43.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/195242-300-300?v=1768476183&width=300&height=300&aspect=true",
       "categoria": "Carnes & Mariscos"
@@ -148,7 +148,7 @@
       "id": "17",
       "nombre": "Costilla en bandeja x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "7.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203467-300-300?v=1768488200&width=300&height=300&aspect=true",
       "categoria": "Carnes & Mariscos"
@@ -157,7 +157,7 @@
       "id": "18",
       "nombre": "Filete De Merluza Vitamar x 425gr",
       "contenidoNeto": "425",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "21.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204209-300-300?v=1768492607&width=300&height=300&aspect=true",
       "categoria": "Carnes & Mariscos"
@@ -166,7 +166,7 @@
       "id": "19",
       "nombre": "Vino Tinto Merlot Clásico Panul botella x 750ml",
       "contenidoNeto": "750",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "21.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/195545-300-300?v=1768488650&width=300&height=300&aspect=true",
       "categoria": "Vinos & Licores"
@@ -175,7 +175,7 @@
       "id": "20",
       "nombre": "Aguardiente Antioqueño sin azúcar vidrio x 1000ml",
       "contenidoNeto": "1000",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "48.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/187004-300-300?v=1768482621&width=300&height=300&aspect=true",
       "categoria": "Vinos & Licores"
@@ -184,7 +184,7 @@
       "id": "21",
       "nombre": "Vino El Adivino x 750ml",
       "contenidoNeto": "750",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "12.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/228000-300-300?v=1768474786&width=300&height=300&aspect=true",
       "categoria": "Vinos & Licores"
@@ -193,7 +193,7 @@
       "id": "22",
       "nombre": "Whiskey Jack Daniel's Old Tennesee x 750ml",
       "contenidoNeto": "750",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "101.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/439660-300-300?v=1768473992&width=300&height=300&aspect=true",
       "categoria": "Vinos & Licores"
@@ -202,7 +202,7 @@
       "id": "23",
       "nombre": "Vino tinto finca Las Moras caber x 750ml",
       "contenidoNeto": "750",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "57.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/212700-300-300?v=1768475033&width=300&height=300&aspect=true",
       "categoria": "Vinos & Licores"
@@ -211,7 +211,7 @@
       "id": "24",
       "nombre": "Whisky Old Parr 12 años x 750ml",
       "contenidoNeto": "750",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "136.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/398029-300-300?v=1768476112&width=300&height=300&aspect=true",
       "categoria": "Vinos & Licores"
@@ -220,7 +220,7 @@
       "id": "25",
       "nombre": "Leche deslactosada Colanta bolsa x6und x 1000ml c-u",
       "contenidoNeto": "1000",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "29.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/426315-300-300?v=1768488576&width=300&height=300&aspect=true",
       "categoria": "Lacteos & Refrigerados"
@@ -229,7 +229,7 @@
       "id": "26",
       "nombre": "Jamón Ideal Rica 21 tajadas x 400gr",
       "contenidoNeto": "400",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "10.600",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/184853-300-300?v=1768492539&width=300&height=300&aspect=true",
       "categoria": "Lacteos & Refrigerados"
@@ -238,7 +238,7 @@
       "id": "25",
       "nombre": "Kumis Alpina bolsa x 1000gr",
       "contenidoNeto": "1000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "8.650",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192414-300-300?v=1768491086&width=300&height=300&aspect=true",
       "categoria": "Lacteos & Refrigerados"
@@ -247,7 +247,7 @@
       "id": "26",
       "nombre": "Queso mozzarella Colanta tajado x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "23.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/202996-300-300?v=1768492493&width=300&height=300&aspect=true",
       "categoria": "Lacteos & Refrigerados"
@@ -256,7 +256,7 @@
       "id": "27",
       "nombre": "Salchicha Ranchera x14und x 480gr",
       "contenidoNeto": "480",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "16.900",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/195766-300-300?v=1768490094&width=300&height=300&aspect=true",
       "categoria": "Lacteos & Refrigerados"
@@ -265,7 +265,7 @@
       "id": "28",
       "nombre": "Leche entera Alpina bolsa x6und x 1100ml c-u",
       "contenidoNeto": "1100",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "35.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192886-300-300?v=1768490218&width=300&height=300&aspect=true",
       "categoria": "Lacteos & Refrigerados"
@@ -274,7 +274,7 @@
       "id": "29",
       "nombre": "Pan bimbo blanco actidefens tajado x 600gr",
       "contenidoNeto": "600",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "7.450",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/268441-300-300?v=1768492287&width=300&height=300&aspect=true",
       "categoria": "Panadería & Pastelería"
@@ -283,7 +283,7 @@
       "id": "30",
       "nombre": "Mogolla santa clara triceral miel x12ux 520gr",
       "contenidoNeto": "520",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "7.350",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/214411-300-300?v=1768492764&width=300&height=300&aspect=true",
       "categoria": "Panadería & Pastelería"
@@ -292,7 +292,7 @@
       "id": "31",
       "nombre": "Ponqué Ramo tradicional x 230g",
       "contenidoNeto": "230",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "5.200",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/207481-300-300?v=1768492303&width=300&height=300&aspect=true",
       "categoria": "Panadería & Pastelería"
@@ -301,7 +301,7 @@
       "id": "32",
       "nombre": "Pan súper perro Bimbo 6 Und x 405gr",
       "contenidoNeto": "405",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "6.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/193066-300-300?v=1768492308&width=300&height=300&aspect=true",
       "categoria": "Panadería & Pastelería"
@@ -310,7 +310,7 @@
       "id": "33",
       "nombre": "Ponque chocoramo x5und. x65gr c-u",
       "contenidoNeto": "65",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "9.900",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/201756-300-300?v=1768492305&width=300&height=300&aspect=true",
       "categoria": "Panadería & Pastelería"
@@ -319,7 +319,7 @@
       "id": "34",
       "nombre": "Tostaos Bimbo integrales x20 und x300gr",
       "contenidoNeto": "300",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "9.150",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/477092-300-300?v=1768491087&width=300&height=300&aspect=true",
       "categoria": "Panadería & Pastelería"
@@ -328,7 +328,7 @@
       "id": "35",
       "nombre": "Papas a la francesa prefreidas y congeladas x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "6.340",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/1831327-500-auto?v=1768493647&width=500&height=auto&aspect=true",
       "categoria": "Alimentos Congelados"
@@ -337,7 +337,7 @@
       "id": "36",
       "nombre": "Fresa Congelada x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "7.800",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/15537725-500-auto?v=1768493692&width=500&height=auto&aspect=true",
       "categoria": "Alimentos Congelados"
@@ -346,7 +346,7 @@
       "id": "37",
       "nombre": "Vegetales Mixtos Congelados FRESCAMPO x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "10.750",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/14471685-500-auto?v=1768488835&width=500&height=auto&aspect=true",
       "categoria": "Alimentos Congelados"
@@ -355,7 +355,7 @@
       "id": "38",
       "nombre": "Rapipa delgada  RAPI x 1000gr",
       "contenidoNeto": "1000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "12.400",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/17822164-500-auto?v=1768441183&width=500&height=auto&aspect=true",
       "categoria": "Alimentos Congelados"
@@ -364,7 +364,7 @@
       "id": "39",
       "nombre": "PALITO QUESO PARA HORNEAR ZENU x 528gr",
       "contenidoNeto": "528",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "22.150",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/13174352-500-auto?v=637899441428500000&width=500&height=auto&aspect=true",
       "categoria": "Alimentos Congelados"
@@ -373,7 +373,7 @@
       "id": "40",
       "nombre": "VEGGIE BURGUER PIETRAN x 360gr",
       "contenidoNeto": "360",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "15.320",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/15567599-500-auto?v=1768488715&width=500&height=auto&aspect=true",
       "categoria": "Alimentos Congelados"
@@ -382,7 +382,7 @@
       "id": "41",
       "nombre": "Galletas Vainilla Wafer Noel x 432gr",
       "contenidoNeto": "432",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "8.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185393-300-300?v=1768495209&width=300&height=300&aspect=true",
       "categoria": "Pasabocas"
@@ -391,7 +391,7 @@
       "id": "42",
       "nombre": "Galletas Oreo Original x 432gr",
       "contenidoNeto": "432",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "14.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/474312-300-300?v=1768494827&width=300&height=300&aspect=true",
       "categoria": "Pasabocas"
@@ -400,7 +400,7 @@
       "id": "43",
       "nombre": "Tostacos Sabor a picante x12 und x25gr c-u",
       "contenidoNeto": "300",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "9.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/190799-300-300?v=1768494602&width=300&height=300&aspect=true",
       "categoria": "Pasabocas"
@@ -409,7 +409,7 @@
       "id": "44",
       "nombre": "Galleta cocosette x8paq.x400g peso neto",
       "contenidoNeto": "400",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "12.950",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/441917-300-300?v=1768494722&width=300&height=300&aspect=true",
       "categoria": "Pasabocas"
@@ -418,7 +418,7 @@
       "id": "45",
       "nombre": "Galletas Integrales Saltín Noel x 415gr",
       "contenidoNeto": "415",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "7.450",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185422-300-300?v=1768494113&width=300&height=300&aspect=true",
       "categoria": "Pasabocas"
@@ -427,7 +427,7 @@
       "id": "46",
       "nombre": "Pasabocas rosquitas Pa Mi Gente multipack x8und x15g c/u",
       "contenidoNeto": "120",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "8.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/371409-300-300?v=1768495110&width=300&height=300&aspect=true",
       "categoria": "Pasabocas"
@@ -436,7 +436,7 @@
       "id": "47",
       "nombre": "Gaseosa Coca Cola sabor original 3lt x 2unds",
       "contenidoNeto": "3000",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "14.600",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/454730-300-300?v=1768496373&width=300&height=300&aspect=true",
       "categoria": "Bebidas"
@@ -445,7 +445,7 @@
       "id": "48",
       "nombre": "Jugo Hit Surtido Brick x200ml Pague 10 lleve 12",
       "contenidoNeto": "200",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "12.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186569-300-300?v=1768496446&width=300&height=300&aspect=true",
       "categoria": "Bebidas"
@@ -454,7 +454,7 @@
       "id": "49",
       "nombre": "Bebida Hatsu té surtido tetrapack x12 unidades x200ml c-u",
       "contenidoNeto": "200",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "19.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/197268-300-300?v=1768495108&width=300&height=300&aspect=true",
       "categoria": "Bebidas"
@@ -463,7 +463,7 @@
       "id": "50",
       "nombre": "Agua Cristal x24 unidades x300ml c-u",
       "contenidoNeto": "3000",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "14.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/207594-300-300?v=1768496384&width=300&height=300&aspect=true",
       "categoria": "Bebidas"
@@ -472,7 +472,7 @@
       "id": "51",
       "nombre": "Gatorade Mandarina pet x500ml",
       "contenidoNeto": "500",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "3.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186505-300-300?v=1768494007&width=300&height=300&aspect=true",
       "categoria": "Bebidas"
@@ -481,7 +481,7 @@
       "id": "52",
       "nombre": "Malta Pony Malta botella pet x6und x200 ml c-u",
       "contenidoNeto": "200",
-      "peso": "mililitros",
+      "peso": "ml",
       "precio": "7.350",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/440041-300-300?v=1768495042&width=300&height=300&aspect=true",
       "categoria": "Bebidas"
@@ -490,7 +490,7 @@
       "id": "53",
       "nombre": "Alimento perro 8kg adultos Dogourmet carne/parrilla",
       "contenidoNeto": "8000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "57.150",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/170054-300-300?v=1768494883&width=300&height=300&aspect=true",
       "categoria": "Alimentos para Mascostas"
@@ -499,7 +499,7 @@
       "id": "54",
       "nombre": "Alimento para gatos Donkat Adulto x 1Kg",
       "contenidoNeto": "1000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "10.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205581-300-300?v=1768497893&width=300&height=300&aspect=true",
       "categoria": "Alimentos para Mascostas"
@@ -508,7 +508,7 @@
       "id": "55",
       "nombre": "Alimento para perro Chunky adultos bolsa x 9kg",
       "contenidoNeto": "9000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "61.550",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204958-300-300?v=1768496962&width=300&height=300&aspect=true",
       "categoria": "Alimentos para Mascostas"
@@ -517,7 +517,7 @@
       "id": "56",
       "nombre": "Alimento para gatos Mirringo original adultos x 8kg",
       "contenidoNeto": "8000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "70.300",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/468241-300-300?v=1768495105&width=300&height=300&aspect=true",
       "categoria": "Alimentos para Mascostas"
@@ -526,7 +526,7 @@
       "id": "57",
       "nombre": "Alimento Dog Chow para perros adultos medianos y grandes x 22.7kg",
       "contenidoNeto": "22700",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "191.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/462710-300-300?v=1768490038&width=300&height=300&aspect=true",
       "categoria": "Alimentos para Mascostas"
@@ -535,7 +535,7 @@
       "id": "58",
       "nombre": "Alimento Wow Can cocinado con carne de Res para Perro x 300g",
       "contenidoNeto": "300",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "4.300",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/199911-300-300?v=1768497509&width=300&height=300&aspect=true",
       "categoria": "Alimentos para Mascostas"
@@ -543,19 +543,10 @@
   ],
   "favoritos": [
     {
-      "id": "35",
-      "nombre": "Papas a la francesa prefreidas y congeladas x 500gr",
-      "contenidoNeto": "500",
-      "peso": "gramos",
-      "precio": "6.340",
-      "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/1831327-500-auto?v=1768493647&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
-    },
-    {
       "id": "1",
       "nombre": "Lenteja Diana x 500gr",
       "contenidoNeto": "500",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "3.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
       "categoria": "Despensa"
@@ -564,12 +555,49 @@
       "id": "2",
       "nombre": "Sal Refisal bolsa x 1000gr",
       "contenidoNeto": "1000",
-      "peso": "gramos",
+      "peso": "G",
       "precio": "1.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
       "categoria": "Despensa"
     }
   ],
-  "carrito": [],
+  "carrito": [
+    {
+      "id": "35",
+      "nombre": "Papas a la francesa prefreidas y congeladas x 500gr",
+      "contenidoNeto": "500",
+      "peso": "G",
+      "precio": "6.340",
+      "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/1831327-500-auto?v=1768493647&width=500&height=auto&aspect=true",
+      "categoria": "Alimentos Congelados"
+    },
+    {
+      "id": "1",
+      "nombre": "Lenteja Diana x 500gr",
+      "contenidoNeto": "500",
+      "peso": "G",
+      "precio": "3.700",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
+      "categoria": "Despensa"
+    },
+    {
+      "id": "7",
+      "nombre": "Banano Urabá x 500gr",
+      "contenidoNeto": "500",
+      "peso": "G",
+      "precio": "1.590",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205432-300-300?v=1768430086&width=300&height=300&aspect=true",
+      "categoria": "Frutas & Verduras"
+    },
+    {
+      "id": "3",
+      "nombre": "Harina PAN maíz blanco x 1000gr",
+      "contenidoNeto": "1000",
+      "peso": "G",
+      "precio": "3.900",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185701-300-300?v=1768361054&width=300&height=300&aspect=true",
+      "categoria": "Despensa"
+    }
+  ],
   "usuario": []
 }

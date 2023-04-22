@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -266,7 +267,7 @@ section, .section-t-space {
     height: calc(100px + (140 - 100) * ((100vw - 320px) / (1920 - 320)));
     object-fit: contain;
 }
-.product-box-3 .product-header .product-header-top {
+.product-header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -284,12 +285,13 @@ section, .section-t-space {
     box-shadow: 0 3px 3px rgba(34,34,34,0.24);
     border-radius: 100%;
     z-index: 0;
+    display: flex;
 }
-/* .product-box-3 .product-header .product-header-top .wishlist-button .feather {
+.product-box-3 .product-header .product-header-top .wishlist-button .feather{
     width: 15px;
     height: 15px;
     color: #4a5568;
-} */
+}
 .product-box-3 .product-footer .product-detail .span-name {
     font-size: 13px;
     color: #50607c;
@@ -320,6 +322,56 @@ section, .section-t-space {
 .product-box-3 .product-footer .price span {
     font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
     color: var(--theme-color);
+}
+.add-to-cart-box{
+  border-radius: 50px;
+}
+.add-to-cart-box .qty-box {
+  width: 100%;
+  height: 100%;
+}
+
+.qty-box {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 250px;
+}
+.add-to-cart-box .qty-box .input-group {
+  background-color: #f8f8f8;
+  border-radius: 50px;
+  padding: 4px;
+  text-align: center;
+  z-index: 0;
+}
+.add-to-cart-box .qty-box .input-group button {
+  width: calc(29px + (35 - 29) * ((100vw - 320px) / (1920 - 320)));
+  height: calc(29px + (35 - 29) * ((100vw - 320px) / (1920 - 320)));
+  display: flex;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  z-index: 0;
+  border-radius: 100% !important;
+}
+.bg-gray {
+  background-color: #f8f8f8 !important;
+}
+.add-to-cart-box .qty-box .input-group button i {
+  font-size: 13px;
+  color: var(--theme-color);
+  margin-top: 1px;
+}
+.add-to-cart-box .qty-box .input-group input {
+  height: auto;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #4a5568;
 }
 
 

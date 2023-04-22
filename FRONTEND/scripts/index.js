@@ -24,6 +24,17 @@ const getProductsFavorites = async (url) => {
   }
 };
 
+const getProductsCart = async (url) => {
+  try {
+    const {data} = await axios.get(url+"carrito"); //desestructuración de objetos
+    console.log(data)
+    return data;
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
+};
+// Post for favorites
 const postProducts = async (url, product) => {
     try {
       const {data} = await axios.post(url+"favoritos", product); //desestructuración de objetos
@@ -33,6 +44,32 @@ const postProducts = async (url, product) => {
       return [];
     }
 };
+// Post for favorites
+const postProductsCart = async (url, product) => {
+  try {
+    const {data} = await axios.post(url+"carrito", product); //desestructuración de objetos
+    return data;
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
+};
+
+const counterProduct = () => {
+  const addBtn = document.querySelector(".qty-right-plus");
+  const subBtn = document.querySelector(".qty-left-minus ");
+  const qtyInput = document.querySelector(".qty-input");
+  addBtn.addEventListener("click", () => {
+    qtyInput.value = parseInt(qtyInput.value)+1;
+  });
+  subBtn.addEventListener("click", () => {
+    if(qtyInput.value <=0){
+        qtyInput.value = 0;
+    }else{
+        qtyInput.value = parseInt(qtyInput.value)-1;
+    }
+  });
+}
 
 const printProducts = (products, container) => {
   container.innerHTML = '';
@@ -55,7 +92,7 @@ const printProducts = (products, container) => {
                         title="View"
                       >
                         <a
-                          href="#"
+                        
                           data-bs-toggle="modal"
                           data-bs-target="#view"
                         >
@@ -68,7 +105,7 @@ const printProducts = (products, container) => {
                         data-bs-placement="top"
                         title="Compare"
                       >
-                        <a href="#">
+                        <a>
                         <span class="material-symbols-outlined">cached</span>
                         </a>
                       </li>
@@ -78,7 +115,7 @@ const printProducts = (products, container) => {
                         data-bs-placement="top"
                         title="Wishlist"
                       >
-                        <a href="#" class="notifi-wishlist" data-button="btn__favorite">
+                        <a class="notifi-wishlist">
                         <span class="material-symbols-outlined" data-id=${product.id} data-button="btn__favorite">favorite</span>
                         </a>
                       </li>
@@ -93,31 +130,48 @@ const printProducts = (products, container) => {
                       <span class="theme-color price">$${product.precio}</span>
                     </h5>
 
-                    <div>
+                    <div class="product-rating mt-sm-2 mt-1">
                       <ul class="rating">
                         <li>
-                          <i data-feather="star" class="fill"></i>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </li>
                         <li>
-                          <i data-feather="star" class="fill"></i>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </li>
                         <li>
-                          <i data-feather="star" class="fill"></i>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </li>
                         <li>
-                          <i data-feather="star" class="fill"></i>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </li>
                         <li>
-                          <i data-feather="star"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </li>
                       </ul>
+                      <h6 class="theme-color">In Stock</h6>
                     </div>
 
-                    <div class="add-to-cart-box">
-                      <button class="btn btn-add-cart addcart-button">
-                        Add
-                      </button>
-                    </div>
+                    <div class="add-to-cart-box bg-white mt-2">
+                                    <!-- <button class="btn btn-add-cart addcart-button">Add
+                                        <span class="add-icon bg-light-gray">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                    </button> -->
+                                    <div class="cart_qty qty-box">
+                                        <div class="input-group bg-gray">
+                                            <button type="button" class="qty-left-minus bg-white" data-type="minus"
+                                                data-field="">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                            </button>
+                                            <input class="form-control input-number qty-input" type="text"
+                                                name="quantity" value="0">
+                                            <button type="button" data-counter="btnAddcart" data-id=${product.id} class="qty-right-plus bg-white" data-type="plus"
+                                                data-field="">
+                                                <i class="fa fa-plus" aria-hidden="true" data-counter="btnAddcart" data-id=${product.id}></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                   </div>
                 </div>
               </div>
@@ -138,14 +192,16 @@ const filterByCategory = (products, event) =>{
 
 // --------------------- Ejecución ------------------------
 document.addEventListener("DOMContentLoaded", async () => {
-    const productos = await getProducts(URL_API);
-    printProducts(productos, containerProducts);
-    // await getProductsFavorites(URL_API);
+  const productos = await getProducts(URL_API);
+  printProducts(productos, containerProducts);
+  // await getProductsFavorites(URL_API);
+  counterProduct();
+  await getProductsCart(URL_API)
 });
 
 document.addEventListener("click", async(event) => {
-        const productos = await getProducts(URL_API);
-        filterByCategory(productos, event);
+  const productos = await getProducts(URL_API);
+  filterByCategory(productos, event);
 });
 
 // Add click event to save to favorites
@@ -155,16 +211,31 @@ document.addEventListener('click', async(event) => {
   console.log(favoritos)
   const productId = event.target.getAttribute("data-id")
   const buttonFavorite = event.target.getAttribute("data-button")
+  console.log(buttonFavorite)
   if (buttonFavorite) {
       if (favoritos.find(item => item.id == productId)) {
-         alert('¡ya se encuentra en favoritos!');
+        Swal.fire('¡ya se encuentra en favoritos!', 'Tu producto ya se encuentra en tu lista de deseos', 'info');
       } else {
         const arrayProduct = productos.find(item => item.id == productId);
-        console.log(arrayProduct)
-         await postProducts(URL_API, arrayProduct)
-         // Mostrar notificación de SweetAlert
-         alert('¡Producto agregado!');
-      }
-          
+        Swal.fire('¡Producto agregado!', 'El producto se ha agregado a la lista de favoritos', 'succes');
+        await postProducts(URL_API, arrayProduct)
+      }       
+  }
+});
+
+// Add clikc event to save to shopping cart
+document.addEventListener("click", async(event) => {
+  const productos = await getProducts(URL_API);
+  const carrito = await getProductsCart(URL_API);
+  const productId = event.target.getAttribute("data-id");
+  const buttonCart = event.target.getAttribute("data-counter");
+  if(buttonCart){
+    if (carrito.find(item => item.id == productId)) {
+      Swal.fire('¡ya se encuentra en el carrito de compras!', 'Tu producto ya se encuentra en tu lista de deseos', 'info');
+    } else {
+      const arrayProduct = productos.find(item => item.id == productId);
+      Swal.fire('¡Producto agregado al carrito!', 'El producto se ha agregado al carrito de compras', 'succes');
+      await postProductsCart(URL_API, arrayProduct)
+    }
   }
 });
