@@ -552,34 +552,16 @@
       "categoria": "Despensa"
     },
     {
-      "id": "2",
-      "nombre": "Sal Refisal bolsa x 1000gr",
-      "contenidoNeto": "1000",
-      "peso": "G",
-      "precio": "1.800",
-      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "id": "48",
+      "nombre": "Jugo Hit Surtido Brick x200ml Pague 10 lleve 12",
+      "contenidoNeto": "200",
+      "peso": "ml",
+      "precio": "12.400",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186569-300-300?v=1768496446&width=300&height=300&aspect=true",
+      "categoria": "Bebidas"
     }
   ],
   "carrito": [
-    {
-      "id": "35",
-      "nombre": "Papas a la francesa prefreidas y congeladas x 500gr",
-      "contenidoNeto": "500",
-      "peso": "G",
-      "precio": "6.340",
-      "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/1831327-500-auto?v=1768493647&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
-    },
-    {
-      "id": "1",
-      "nombre": "Lenteja Diana x 500gr",
-      "contenidoNeto": "500",
-      "peso": "G",
-      "precio": "3.700",
-      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
-    },
     {
       "id": "7",
       "nombre": "Banano Urabá x 500gr",
@@ -590,13 +572,22 @@
       "categoria": "Frutas & Verduras"
     },
     {
-      "id": "3",
-      "nombre": "Harina PAN maíz blanco x 1000gr",
+      "id": "25",
+      "nombre": "Leche deslactosada Colanta bolsa x6und x 1000ml c-u",
       "contenidoNeto": "1000",
+      "peso": "ml",
+      "precio": "29.000",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/426315-300-300?v=1768488576&width=300&height=300&aspect=true",
+      "categoria": "Lacteos & Refrigerados"
+    },
+    {
+      "id": "53",
+      "nombre": "Alimento perro 8kg adultos Dogourmet carne/parrilla",
+      "contenidoNeto": "8000",
       "peso": "G",
-      "precio": "3.900",
-      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185701-300-300?v=1768361054&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "precio": "57.150",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/170054-300-300?v=1768494883&width=300&height=300&aspect=true",
+      "categoria": "Alimentos para Mascostas"
     }
   ],
   "usuario": []

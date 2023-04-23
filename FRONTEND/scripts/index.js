@@ -16,7 +16,6 @@ const getProducts = async (url) => {
 const getProductsFavorites = async (url) => {
   try {
     const {data} = await axios.get(url+"favoritos"); //desestructuración de objetos
-    console.log(data)
     return data;
   } catch (error) {
     console.log(error);
@@ -27,7 +26,6 @@ const getProductsFavorites = async (url) => {
 const getProductsCart = async (url) => {
   try {
     const {data} = await axios.get(url+"carrito"); //desestructuración de objetos
-    console.log(data)
     return data;
   } catch (error) {
     console.log(error);
@@ -44,7 +42,7 @@ const postProducts = async (url, product) => {
       return [];
     }
 };
-// Post for favorites
+// Post for cart
 const postProductsCart = async (url, product) => {
   try {
     const {data} = await axios.post(url+"carrito", product); //desestructuración de objetos
@@ -55,21 +53,21 @@ const postProductsCart = async (url, product) => {
   }
 };
 
-const counterProduct = () => {
-  const addBtn = document.querySelector(".qty-right-plus");
-  const subBtn = document.querySelector(".qty-left-minus ");
-  const qtyInput = document.querySelector(".qty-input");
-  addBtn.addEventListener("click", () => {
-    qtyInput.value = parseInt(qtyInput.value)+1;
-  });
-  subBtn.addEventListener("click", () => {
-    if(qtyInput.value <=0){
-        qtyInput.value = 0;
-    }else{
-        qtyInput.value = parseInt(qtyInput.value)-1;
-    }
-  });
-}
+// const counterProduct = () => {
+//   const addBtn = document.querySelector(".qty-right-plus");
+//   const subBtn = document.querySelector(".qty-left-minus ");
+//   const qtyInput = document.querySelector(".qty-input");
+//   addBtn.addEventListener("click", () => {
+//     qtyInput.value = parseInt(qtyInput.value)+1;
+//   });
+//   subBtn.addEventListener("click", () => {
+//     if(qtyInput.value <=0){
+//         qtyInput.value = 0;
+//     }else{
+//         qtyInput.value = parseInt(qtyInput.value)-1;
+//     }
+//   });
+// }
 
 const printProducts = (products, container) => {
   container.innerHTML = '';
@@ -151,27 +149,9 @@ const printProducts = (products, container) => {
                       <h6 class="theme-color">In Stock</h6>
                     </div>
 
-                    <div class="add-to-cart-box bg-white mt-2">
-                                    <!-- <button class="btn btn-add-cart addcart-button">Add
-                                        <span class="add-icon bg-light-gray">
-                                            <i class="fa-solid fa-plus"></i>
-                                        </span>
-                                    </button> -->
-                                    <div class="cart_qty qty-box">
-                                        <div class="input-group bg-gray">
-                                            <button type="button" class="qty-left-minus bg-white" data-type="minus"
-                                                data-field="">
-                                                <i class="fa fa-minus" aria-hidden="true"></i>
-                                            </button>
-                                            <input class="form-control input-number qty-input" type="text"
-                                                name="quantity" value="0">
-                                            <button type="button" data-counter="btnAddcart" data-id=${product.id} class="qty-right-plus bg-white" data-type="plus"
-                                                data-field="">
-                                                <i class="fa fa-plus" aria-hidden="true" data-counter="btnAddcart" data-id=${product.id}></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="add-to-cart-box">
+                      <button  data-card="btnAddcart" data-id=${product.id} class="btn btn-add-cart addcart-button">Add</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -195,7 +175,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const productos = await getProducts(URL_API);
   printProducts(productos, containerProducts);
   // await getProductsFavorites(URL_API);
-  counterProduct();
   await getProductsCart(URL_API)
 });
 
@@ -208,33 +187,32 @@ document.addEventListener("click", async(event) => {
 document.addEventListener('click', async(event) => {
   const productos = await getProducts(URL_API);
   const favoritos = await getProductsFavorites(URL_API);
-  console.log(favoritos)
   const productId = event.target.getAttribute("data-id")
   const buttonFavorite = event.target.getAttribute("data-button")
   console.log(buttonFavorite)
   if (buttonFavorite) {
       if (favoritos.find(item => item.id == productId)) {
-        Swal.fire('¡ya se encuentra en favoritos!', 'Tu producto ya se encuentra en tu lista de deseos', 'info');
+        Swal.fire('¡Ya se encuentra en favoritos!', 'Tu producto ya se encuentra en tu lista de productos favoritos', 'info');
       } else {
         const arrayProduct = productos.find(item => item.id == productId);
-        Swal.fire('¡Producto agregado!', 'El producto se ha agregado a la lista de favoritos', 'succes');
+        Swal.fire('¡Producto agregado!', 'El producto se ha agregado a tu lista de favoritos', 'success');
         await postProducts(URL_API, arrayProduct)
       }       
   }
 });
 
-// Add clikc event to save to shopping cart
+// Add click event to save to shopping cart
 document.addEventListener("click", async(event) => {
   const productos = await getProducts(URL_API);
   const carrito = await getProductsCart(URL_API);
   const productId = event.target.getAttribute("data-id");
-  const buttonCart = event.target.getAttribute("data-counter");
+  const buttonCart = event.target.getAttribute("data-card");
   if(buttonCart){
     if (carrito.find(item => item.id == productId)) {
-      Swal.fire('¡ya se encuentra en el carrito de compras!', 'Tu producto ya se encuentra en tu lista de deseos', 'info');
+      Swal.fire('¡Ya se encuentra en el carrito de compras!', 'Tu producto ya se encuentra en tu carrito de compras', 'info');
     } else {
       const arrayProduct = productos.find(item => item.id == productId);
-      Swal.fire('¡Producto agregado al carrito!', 'El producto se ha agregado al carrito de compras', 'succes');
+      Swal.fire('¡Producto agregado al carrito!', 'El producto se ha agregado al carrito de compras', 'success');
       await postProductsCart(URL_API, arrayProduct)
     }
   }

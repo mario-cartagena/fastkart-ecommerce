@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="E-commerce Fastkart" />
+    <meta name="keywords" content="Fastkart" />
+    <meta name="author" content="Mario Cartagena" />
+    <link rel="icon" href="../assets/images/favicon/1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/shoppingCart.css" />
+    
+   <!-- Axios -->
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <!-- Bootstrap -->
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+     crossorigin="anonymous"
+   />
+   <!-- Material Symbols -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <!-- Font Awesome -->
+   <script
+     src="https://kit.fontawesome.com/1b38f3e0d7.js"
+     crossorigin="anonymous"
+   ></script>
+    <title>Fastkart</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="pb-md-4 pb-0">
+      <!-- Header Top -->
+      <div class="header__top">
+        <div class="container-fluid-lg">
+          <div class="row">
+            <div class="col-lg-9 d-lg-flex align-items-center">  
+              <h6>
+                <strong class="me-1 text-white">Welcome to Fastkart!</strong>
+              </h6>
+            </div>
+            <div class="col-lg-3">
+              <ul class="header__list list-unstyled">
+                <li>
+                  <div class="dropdown header__select">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="../assets/images/country/united-states.png"
+                        class="img-fluid blur-up lazyloaded"
+                        alt=""
+                      />
+                      <span>English</span>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown header__select">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>USD</span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Middle -->
+      <div class="top-nav">
+        <div class="container-fluid-lg">
+          <div class="row">
+            <div class="col-12">
+              <div class="navbar-top">
+                <a href="../index.html" class="web-logo">
+                  <img
+                    src="../assets/images/logo/1.png"
+                    class="img-fluid"
+                    alt="Logo Fastkart"
+                  />
+                </a>
+                <div class="middle-box">
+                  <div class="location-box" class="btn location-button">
+                    <button class="btn location-button">
+                      <span class="location-arrow">
+                        <i data-feather="map-pin"></i>
+                      </span>
+                      <span class="locat-name">Your Location</span>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                  </div>
+                  <div class="search-box">
+                    <form class="input-group">
+                      <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Busca un producto..."
+                        aria-label="Recipient's username"
+                        aria-describedby="button-addon2"
+                      />
+                      <button class="btn" type="button" id="button-addon2">
+                        <i data-feather="search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="rightside-box">
+                  <ul class="right-side-menu list-unstyled">
+                    <!-- Icono de lupa responsive -->
+                    <li class="right-side">
+                      <div class="delivery-login-box">
+                        <div class="delivery-icon">
+                          <div class="search-box">
+                            <i data-feather="search"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="right-side">
+                      <div class="delivery-icon">
+                        <i data-feather="phone-call"></i>
+                      </div>
+                    </li>
+                    <li class="right-side">
+                      <a
+                        href="./favorites.html"
+                        class="btn p-0 position-relative"
+                      >
+                        <i data-feather="heart"></i>
+                      </a>
+                    </li>
+                    <li class="right-side">
+                      <a
+                        href="./shoppingCart.html"
+                        class="btn p-0 position-relative"
+                      >
+                        <i data-feather="shopping-cart"></i>
+                      </a>
+                    </li>
+                    <li class="right-side">
+                      <a
+                        href="./login.html"
+                        class="btn p-0 position-relative"
+                      >
+                        <i data-feather="user"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid-lg">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-nav">
+              <div class="header-nav-left">
+                <button class="dropdown-category">
+                  <i data-feather="align-left"></i>
+                  <span>All Categories</span>
+                </button>
+              </div>
+              <div class="header-nav-middle">
+                <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
+                  <div
+                    class="offcanvas offcanvas-collapse order-xl-2"
+                    id="primaryMenu"
+                    style="visibility: hidden"
+                    aria-hidden="true"
+                  >
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            >Home</a
+                          >
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            >Shop</a
+                          >
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            >Product</a
+                          >
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-mega">
+                          <a
+                            class="nav-link dropdown-toggle ps-xl-2 ps-0"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            >Mega Menu</a
+                          >
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            >Blog</a
+                          >
+                        </li>
+
+                        <li class="nav-item dropdown new-nav-item">
+                          <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            >Pages</a
+                          >
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            >Seller</a
+                          >
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Breadcrumb Section Start -->
+    <section class="breadscrumb-section pt-0">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadscrumb-contain">
+                        <h2>Cart</h2>
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <section class="cart-section section-b-space">
+        <div class="container-fluid-lg">
+            <div class="row g-sm-5 g-3 container-products">
+                <div class="col-xxl-9">
+                    <div class="cart-table">
+                        <div class="table-responsive-xl">
+                            <table class="table">
+                                <tbody>
+                                    <tr class="product-box-contain">
+                                        <td class="product-detail">
+                                            <div class="product border-0">
+                                                <a href="product-left-thumbnail.html" class="product-image">
+                                                    <img src="../assets/images/vegetable/product/1.png"
+                                                        class="img-fluid blur-up lazyload" alt="">
+                                                </a>
+                                                <div class="product-detail">
+                                                    <ul>
+                                                        <li class="name">
+                                                            <a href="product-left-thumbnail.html">Bell pepper</a>
+                                                        </li>
+
+                                                        <li class="text-content"><span class="text-title">Sold
+                                                                By:</span> Fresho</li>
+
+                                                        <li class="text-content"><span
+                                                                class="text-title">Quantity</span> - 500 g
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="price">
+                                            <h4 class="table-title text-content">Price</h4>
+                                            <h5>$35.10 <del class="text-content">$45.68</del></h5>
+                                            <h6 class="theme-color">You Save : $20.68</h6>
+                                        </td>
+
+                                        <td class="quantity">
+                                            <h4 class="table-title text-content">Qty</h4>
+                                            <div class="quantity-price">
+                                                <div class="cart_qty">
+                                                    <div class="input-group">
+                                                        <button type="button" class="btn qty-left-minus"
+                                                            data-type="minus" data-field="">
+                                                            <i class="fa fa-minus ms-0" aria-hidden="true"></i>
+                                                        </button>
+                                                        <input class="form-control input-number qty-input" type="text"
+                                                            name="quantity" value="0">
+                                                        <button type="button" class="btn qty-right-plus"
+                                                            data-type="plus" data-field="">
+                                                            <i class="fa fa-plus ms-0" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="subtotal">
+                                            <h4 class="table-title text-content">Total</h4>
+                                            <h5>$35.10</h5>
+                                        </td>
+
+                                        <td class="save-remove">
+                                            <h4 class="table-title text-content">Action</h4>
+                                            <a class="save notifi-wishlist" href="javascript:void(0)">Save for later</a>
+                                            <a class="remove close_button" href="javascript:void(0)">Remove</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-3">
+                    <div class="summery-box p-sticky">
+                        <div class="summery-header">
+                            <h3>Cart Total</h3>
+                        </div>
+
+                        <div class="summery-contain">
+                            <div class="coupon-cart">
+                                <h6 class="text-content mb-2">Coupon Apply</h6>
+                                <div class="mb-3 coupon-box input-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Enter Coupon Code Here...">
+                                    <button class="btn-apply">Apply</button>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <h4>Subtotal</h4>
+                                    <h4 class="price">$125.65</h4>
+                                </li>
+
+                                <li>
+                                    <h4>Coupon Discount</h4>
+                                    <h4 class="price">(-) 0.00</h4>
+                                </li>
+
+                                <li class="align-items-start">
+                                    <h4>Shipping</h4>
+                                    <h4 class="price text-end">$6.90</h4>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="summery-total">
+                            <li class="list-total border-top-0">
+                                <h4>Total (USD)</h4>
+                                <h4 class="price theme-color">$132.58</h4>
+                            </li>
+                        </ul>
+
+                        <div class="button-group cart-button">
+                            <ul>
+                                <li>
+                                    <button onclick="location.href = 'checkout.html';"
+                                        class="btn btn-animation proceed-btn fw-bold">Process To Checkout</button>
+                                </li>
+
+                                <li>
+                                    <button onclick="location.href = 'index.html';"
+                                        class="btn btn-light shopping-button text-dark">
+                                        <i class="fa-solid fa-arrow-left-long"></i>Return To Shopping</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section-t-space">
+      <div class="container-fluid-lg">
+        <div class="main-footer section-b-space section-t-space">
+          <div class="row g-md-4 g-3">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="footer-logo">
+                <div class="theme-logo">
+                  <a href="index.html">
+                    <img
+                      src="../assets/images/logo/1.png"
+                      class="blur-up lazyload"
+                      alt="Logo Fastkart"
+                    />
+                  </a>
+                </div>
+                <div class="footer-logo-contain">
+                  <p>
+                    We are a friendly bar serving a variety of cocktails, wines
+                    and beers. Our bar is a perfect place for a couple.
+                  </p>
+
+                  <ul class="address">
+                    <li>
+                      <i data-feather="home"></i>
+                      <a href="#">1418 Riverwood Drive, CA 96052, US</a>
+                    </li>
+                    <li>
+                      <i data-feather="mail"></i>
+                      <a href="#">support@fastkart.com</a>
+                    </li>
+                  </ul>
+                  <div class="reserve mt-5">
+                    <h6 class="text-content">
+                      ©2022 Fastkart All rights reserved
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+              <div class="footer-title">
+                <h4>Categories</h4>
+              </div>
+
+              <div class="footer-contain">
+                <ul>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Vegetables & Fruit</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Beverages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Meats & Seafood</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Frozen Foods</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Biscuits & Snacks</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Grocery & Staples</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl col-lg-2 col-sm-3">
+              <div class="footer-title">
+                <h4>Useful Links</h4>
+              </div>
+
+              <div class="footer-contain">
+                <ul>
+                  <li>
+                    <a href="index.html" class="text-content">Home</a>
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html" class="text-content"
+                      >Shop</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about-us.html" class="text-content">About Us</a>
+                  </li>
+                  <li>
+                    <a href="blog-list.html" class="text-content">Blog</a>
+                  </li>
+                  <li>
+                    <a href="contact-us.html" class="text-content"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-sm-3">
+              <div class="footer-title">
+                <h4>Help Center</h4>
+              </div>
+
+              <div class="footer-contain">
+                <ul>
+                  <li>
+                    <a href="order-success.html" class="text-content"
+                      >Your Order</a
+                    >
+                  </li>
+                  <li>
+                    <a href="user-dashboard.html" class="text-content"
+                      >Your Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="order-tracking.html" class="text-content"
+                      >Track Order</a
+                    >
+                  </li>
+                  <li>
+                    <a href="wishlist.html" class="text-content"
+                      >Your Wishlist</a
+                    >
+                  </li>
+                  <li>
+                    <a href="search.html" class="text-content">Search</a>
+                  </li>
+                  <li>
+                    <a href="faq.html" class="text-content">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="footer-title">
+                <h4>Contact Us</h4>
+              </div>
+
+              <div class="footer-contact">
+                <ul>
+                  <li>
+                    <div class="footer-number">
+                      <i data-feather="phone"></i>
+                      <div class="contact-number">
+                        <h6 class="text-content">Hotline 24/7 :</h6>
+                        <h5>+91 888 104 2340</h5>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="footer-number">
+                      <i data-feather="mail"></i>
+                      <div class="contact-number">
+                        <h6 class="text-content">Email Address :</h6>
+                        <h5>fastkart@hotmail.com</h5>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="social-app mb-0">
+                    <h5 class="mb-2 text-content">Download App :</h5>
+                    <ul>
+                      <li class="mb-0">
+                        <a
+                          href="https://play.google.com/store/apps"
+                          target="_blank"
+                        >
+                          <img
+                            src="../assets/images/playstore.svg"
+                            class="blur-up lazyload"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="mb-0">
+                        <a
+                          href="https://www.apple.com/in/app-store/"
+                          target="_blank"
+                        >
+                          <img
+                            src="../assets/images/appstore.svg"
+                            class="blur-up lazyload"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Favorites.js -->
+    <script src="../scripts/shoppingCart.js" type="module"></script>
+    <!-- Scripts para Iconos Feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../scripts/icons.js"></script>
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

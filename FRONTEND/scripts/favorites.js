@@ -21,7 +21,15 @@ const getProductsFavorites = async (url) => {
       return [];
     }
 };
-
+const getProductsCart = async (url) => {
+    try {
+      const {data} = await axios.get(url+"carrito"); //desestructuración de objetos
+      return data;
+    } catch (error) {
+      console.log(error);
+      return [];
+    }
+  };
 const deleteProductsFavorites = async (url, id) => {
     try {
       const {data} = await axios.delete(url+"favoritos/"+id); //desestructuración de objetos
@@ -32,6 +40,16 @@ const deleteProductsFavorites = async (url, id) => {
       return [];
     }
 };
+// Post for cart
+const postProductsCart = async (url, product) => {
+    try {
+      const {data} = await axios.post(url+"carrito", product); //desestructuración de objetos
+      return data;
+    } catch (error) {
+      console.log(error);
+      return [];
+    }
+  };
 
 const printProducts = (products, container) => {
     container.innerHTML = '';
@@ -45,7 +63,7 @@ const printProducts = (products, container) => {
                                         alt=${product.nombre}>
 
                                 <div class="product-header-top">
-                                    <button class="btn wishlist-button close_button" data-button="delete">
+                                    <button class="btn wishlist-button close_button" data-button="delete" data-id=${product.id}>
                                     <svg data-id=${product.id} data-button="delete" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                     </button>
                                 </div>
@@ -63,20 +81,7 @@ const printProducts = (products, container) => {
                                 </h5>
 
                                 <div class="add-to-cart-box bg-white mt-2">
-                                    <div class="cart_qty qty-box">
-                                        <div class="input-group bg-white">
-                                            <button type="button" class="qty-left-minus bg-gray" data-type="minus"
-                                                data-field="">
-                                                <i class="fa fa-minus" aria-hidden="true"></i>
-                                            </button>
-                                            <input class="form-control input-number qty-input" type="text"
-                                                name="quantity" value="0">
-                                            <button type="button" class="qty-right-plus bg-gray" data-type="plus"
-                                                data-field="">
-                                                <i class="fa fa-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    </div>
+                                    <button data-card="btnAddcart" data-id=${product.id} class="btn btn-add-cart addcart-button">Add</button>
                                 </div>
                             </div>
                         </div>
@@ -106,18 +111,32 @@ const printProducts = (products, container) => {
 document.addEventListener("DOMContentLoaded", async () => {
     const productosFavoritos = await getProductsFavorites(URL_API);
     printProducts(productosFavoritos, containerProducts);
-    counterProduct();
 });
 
-// Delete product shopping cart
+// Delete products favorites
 document.addEventListener("click", async(event) => {
-    const productos = await getProducts(URL_API);
     const productId = event.target.getAttribute("data-id");
     const buttonDelete = event.target.getAttribute("data-button")
     if(buttonDelete){
-        const arrayProduct = productos.find(item => item.id == productId);
+        await deleteProductsFavorites(URL_API, productId);
         Swal.fire('¡Producto Eliminado!', 'El producto se ha eliminado de la lista de favoritos', 'success');
-        await deleteProductsFavorites(URL_API, arrayProduct.id);
+
+    }
+});
+//  Add product shopping cart
+document.addEventListener("click", async(event) => {
+    const productos = await getProducts(URL_API);
+    const carrito = await getProductsCart(URL_API);
+    const productId = event.target.getAttribute("data-id");
+    const buttonCart = event.target.getAttribute("data-card");
+    if(buttonCart){
+      if (carrito.find(item => item.id == productId)) {
+        Swal.fire('¡Ya se encuentra en el carrito de compras!', 'Tu producto ya se encuentra en tu carrito de compras', 'info');
+      } else {
+        const arrayProduct = productos.find(item => item.id == productId);
+        Swal.fire('¡Producto agregado al carrito!', 'El producto se ha agregado al carrito de compras', 'success');
+        await postProductsCart(URL_API, arrayProduct)
+      }
     }
   });
 
