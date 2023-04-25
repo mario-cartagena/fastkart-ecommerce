@@ -7,7 +7,8 @@
       "peso": "G",
       "precio": "3.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
       "id": "2",
@@ -16,7 +17,8 @@
       "peso": "G",
       "precio": "1.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
       "id": "3",
@@ -25,7 +27,8 @@
       "peso": "G",
       "precio": "3.900",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185701-300-300?v=1768361054&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
       "id": "4",
@@ -34,7 +37,8 @@
       "peso": "ml",
       "precio": "52.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192258-300-300?v=1768361070&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
       "id": "5",
@@ -43,7 +47,8 @@
       "peso": "G",
       "precio": "3.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/365823-300-300?v=1768360822&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
       "id": "6",
@@ -52,7 +57,8 @@
       "peso": "G",
       "precio": "6.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/191169-300-300?v=1768361015&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
       "id": "7",
@@ -61,7 +67,8 @@
       "peso": "G",
       "precio": "1.590",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205432-300-300?v=1768430086&width=300&height=300&aspect=true",
-      "categoria": "Frutas & Verduras"
+      "categoria": "Frutas & Verduras",
+      "cantidad": 1
     },
     {
       "id": "8",
@@ -70,7 +77,8 @@
       "peso": "G",
       "precio": "2.440",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204905-300-300?v=1768429760&width=300&height=300&aspect=true",
-      "categoria": "Frutas & Verduras"
+      "categoria": "Frutas & Verduras",
+      "cantidad": 1
     },
     {
       "id": "9",
@@ -79,7 +87,8 @@
       "peso": "G",
       "precio": "2.240",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205433-300-300?v=1768429608&width=300&height=300&aspect=true",
-      "categoria": "Frutas & Verduras"
+      "categoria": "Frutas & Verduras",
+      "cantidad": 1
     },
     {
       "id": "10",
@@ -88,7 +97,8 @@
       "peso": "G",
       "precio": "3.840",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203191-300-300?v=1768429748&width=300&height=300&aspect=true",
-      "categoria": "Frutas & Verduras"
+      "categoria": "Frutas & Verduras",
+      "cantidad": 1
     },
     {
       "id": "11",
@@ -97,7 +107,8 @@
       "peso": "G",
       "precio": "8.750",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204068-300-300?v=1768428528&width=300&height=300&aspect=true",
-      "categoria": "Frutas & Verduras"
+      "categoria": "Frutas & Verduras",
+      "cantidad": 1
     },
     {
       "id": "12",
@@ -106,7 +117,8 @@
       "peso": "G",
       "precio": "3.750",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203143-300-300?v=1768430087&width=300&height=300&aspect=true",
-      "categoria": "Frutas & Verduras"
+      "categoria": "Frutas & Verduras",
+      "cantidad": 1
     },
     {
       "id": "13",
@@ -115,7 +127,8 @@
       "peso": "G",
       "precio": "12.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203840-300-300?v=1768491155&width=300&height=300&aspect=true",
-      "categoria": "Carnes & Mariscos"
+      "categoria": "Carnes & Mariscos",
+      "cantidad": 1
     },
     {
       "id": "14",
@@ -124,7 +137,8 @@
       "peso": "G",
       "precio": "42.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203844-300-300?v=1768489874&width=300&height=300&aspect=true",
-      "categoria": "Carnes & Mariscos"
+      "categoria": "Carnes & Mariscos",
+      "cantidad": 1
     },
     {
       "id": "15",
@@ -133,7 +147,8 @@
       "peso": "G",
       "precio": "12.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204001-300-300?v=1768488408&width=300&height=300&aspect=true",
-      "categoria": "Carnes & Mariscos"
+      "categoria": "Carnes & Mariscos",
+      "cantidad": 1
     },
     {
       "id": "16",
@@ -142,7 +157,8 @@
       "peso": "G",
       "precio": "43.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/195242-300-300?v=1768476183&width=300&height=300&aspect=true",
-      "categoria": "Carnes & Mariscos"
+      "categoria": "Carnes & Mariscos",
+      "cantidad": 1
     },
     {
       "id": "17",
@@ -151,7 +167,8 @@
       "peso": "G",
       "precio": "7.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203467-300-300?v=1768488200&width=300&height=300&aspect=true",
-      "categoria": "Carnes & Mariscos"
+      "categoria": "Carnes & Mariscos",
+      "cantidad": 1
     },
     {
       "id": "18",
@@ -160,7 +177,8 @@
       "peso": "G",
       "precio": "21.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204209-300-300?v=1768492607&width=300&height=300&aspect=true",
-      "categoria": "Carnes & Mariscos"
+      "categoria": "Carnes & Mariscos",
+      "cantidad": 1
     },
     {
       "id": "19",
@@ -169,7 +187,8 @@
       "peso": "ml",
       "precio": "21.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/195545-300-300?v=1768488650&width=300&height=300&aspect=true",
-      "categoria": "Vinos & Licores"
+      "categoria": "Vinos & Licores",
+      "cantidad": 1
     },
     {
       "id": "20",
@@ -178,7 +197,8 @@
       "peso": "ml",
       "precio": "48.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/187004-300-300?v=1768482621&width=300&height=300&aspect=true",
-      "categoria": "Vinos & Licores"
+      "categoria": "Vinos & Licores",
+      "cantidad": 1
     },
     {
       "id": "21",
@@ -187,7 +207,8 @@
       "peso": "ml",
       "precio": "12.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/228000-300-300?v=1768474786&width=300&height=300&aspect=true",
-      "categoria": "Vinos & Licores"
+      "categoria": "Vinos & Licores",
+      "cantidad": 1
     },
     {
       "id": "22",
@@ -196,7 +217,8 @@
       "peso": "ml",
       "precio": "101.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/439660-300-300?v=1768473992&width=300&height=300&aspect=true",
-      "categoria": "Vinos & Licores"
+      "categoria": "Vinos & Licores",
+      "cantidad": 1
     },
     {
       "id": "23",
@@ -205,7 +227,8 @@
       "peso": "ml",
       "precio": "57.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/212700-300-300?v=1768475033&width=300&height=300&aspect=true",
-      "categoria": "Vinos & Licores"
+      "categoria": "Vinos & Licores",
+      "cantidad": 1
     },
     {
       "id": "24",
@@ -214,7 +237,8 @@
       "peso": "ml",
       "precio": "136.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/398029-300-300?v=1768476112&width=300&height=300&aspect=true",
-      "categoria": "Vinos & Licores"
+      "categoria": "Vinos & Licores",
+      "cantidad": 1
     },
     {
       "id": "25",
@@ -223,7 +247,8 @@
       "peso": "ml",
       "precio": "29.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/426315-300-300?v=1768488576&width=300&height=300&aspect=true",
-      "categoria": "Lacteos & Refrigerados"
+      "categoria": "Lacteos & Refrigerados",
+      "cantidad": 1
     },
     {
       "id": "26",
@@ -232,7 +257,8 @@
       "peso": "G",
       "precio": "10.600",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/184853-300-300?v=1768492539&width=300&height=300&aspect=true",
-      "categoria": "Lacteos & Refrigerados"
+      "categoria": "Lacteos & Refrigerados",
+      "cantidad": 1
     },
     {
       "id": "25",
@@ -241,7 +267,8 @@
       "peso": "G",
       "precio": "8.650",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192414-300-300?v=1768491086&width=300&height=300&aspect=true",
-      "categoria": "Lacteos & Refrigerados"
+      "categoria": "Lacteos & Refrigerados",
+      "cantidad": 1
     },
     {
       "id": "26",
@@ -250,7 +277,8 @@
       "peso": "G",
       "precio": "23.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/202996-300-300?v=1768492493&width=300&height=300&aspect=true",
-      "categoria": "Lacteos & Refrigerados"
+      "categoria": "Lacteos & Refrigerados",
+      "cantidad": 1
     },
     {
       "id": "27",
@@ -259,7 +287,8 @@
       "peso": "G",
       "precio": "16.900",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/195766-300-300?v=1768490094&width=300&height=300&aspect=true",
-      "categoria": "Lacteos & Refrigerados"
+      "categoria": "Lacteos & Refrigerados",
+      "cantidad": 1
     },
     {
       "id": "28",
@@ -268,7 +297,8 @@
       "peso": "ml",
       "precio": "35.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192886-300-300?v=1768490218&width=300&height=300&aspect=true",
-      "categoria": "Lacteos & Refrigerados"
+      "categoria": "Lacteos & Refrigerados",
+      "cantidad": 1
     },
     {
       "id": "29",
@@ -277,7 +307,8 @@
       "peso": "G",
       "precio": "7.450",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/268441-300-300?v=1768492287&width=300&height=300&aspect=true",
-      "categoria": "Panadería & Pastelería"
+      "categoria": "Panadería & Pastelería",
+      "cantidad": 1
     },
     {
       "id": "30",
@@ -286,7 +317,8 @@
       "peso": "G",
       "precio": "7.350",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/214411-300-300?v=1768492764&width=300&height=300&aspect=true",
-      "categoria": "Panadería & Pastelería"
+      "categoria": "Panadería & Pastelería",
+      "cantidad": 1
     },
     {
       "id": "31",
@@ -295,7 +327,8 @@
       "peso": "G",
       "precio": "5.200",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/207481-300-300?v=1768492303&width=300&height=300&aspect=true",
-      "categoria": "Panadería & Pastelería"
+      "categoria": "Panadería & Pastelería",
+      "cantidad": 1
     },
     {
       "id": "32",
@@ -304,7 +337,8 @@
       "peso": "G",
       "precio": "6.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/193066-300-300?v=1768492308&width=300&height=300&aspect=true",
-      "categoria": "Panadería & Pastelería"
+      "categoria": "Panadería & Pastelería",
+      "cantidad": 1
     },
     {
       "id": "33",
@@ -313,7 +347,8 @@
       "peso": "G",
       "precio": "9.900",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/201756-300-300?v=1768492305&width=300&height=300&aspect=true",
-      "categoria": "Panadería & Pastelería"
+      "categoria": "Panadería & Pastelería",
+      "cantidad": 1
     },
     {
       "id": "34",
@@ -322,7 +357,8 @@
       "peso": "G",
       "precio": "9.150",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/477092-300-300?v=1768491087&width=300&height=300&aspect=true",
-      "categoria": "Panadería & Pastelería"
+      "categoria": "Panadería & Pastelería",
+      "cantidad": 1
     },
     {
       "id": "35",
@@ -331,7 +367,8 @@
       "peso": "G",
       "precio": "6.340",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/1831327-500-auto?v=1768493647&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
+      "categoria": "Alimentos Congelados",
+      "cantidad": 1
     },
     {
       "id": "36",
@@ -340,7 +377,8 @@
       "peso": "G",
       "precio": "7.800",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/15537725-500-auto?v=1768493692&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
+      "categoria": "Alimentos Congelados",
+      "cantidad": 1
     },
     {
       "id": "37",
@@ -349,7 +387,8 @@
       "peso": "G",
       "precio": "10.750",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/14471685-500-auto?v=1768488835&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
+      "categoria": "Alimentos Congelados",
+      "cantidad": 1
     },
     {
       "id": "38",
@@ -358,7 +397,8 @@
       "peso": "G",
       "precio": "12.400",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/17822164-500-auto?v=1768441183&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
+      "categoria": "Alimentos Congelados",
+      "cantidad": 1
     },
     {
       "id": "39",
@@ -367,7 +407,8 @@
       "peso": "G",
       "precio": "22.150",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/13174352-500-auto?v=637899441428500000&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
+      "categoria": "Alimentos Congelados",
+      "cantidad": 1
     },
     {
       "id": "40",
@@ -376,7 +417,8 @@
       "peso": "G",
       "precio": "15.320",
       "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/15567599-500-auto?v=1768488715&width=500&height=auto&aspect=true",
-      "categoria": "Alimentos Congelados"
+      "categoria": "Alimentos Congelados",
+      "cantidad": 1
     },
     {
       "id": "41",
@@ -385,7 +427,8 @@
       "peso": "G",
       "precio": "8.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185393-300-300?v=1768495209&width=300&height=300&aspect=true",
-      "categoria": "Pasabocas"
+      "categoria": "Pasabocas",
+      "cantidad": 1
     },
     {
       "id": "42",
@@ -394,7 +437,8 @@
       "peso": "G",
       "precio": "14.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/474312-300-300?v=1768494827&width=300&height=300&aspect=true",
-      "categoria": "Pasabocas"
+      "categoria": "Pasabocas",
+      "cantidad": 1
     },
     {
       "id": "43",
@@ -403,7 +447,8 @@
       "peso": "G",
       "precio": "9.800",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/190799-300-300?v=1768494602&width=300&height=300&aspect=true",
-      "categoria": "Pasabocas"
+      "categoria": "Pasabocas",
+      "cantidad": 1
     },
     {
       "id": "44",
@@ -412,7 +457,8 @@
       "peso": "G",
       "precio": "12.950",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/441917-300-300?v=1768494722&width=300&height=300&aspect=true",
-      "categoria": "Pasabocas"
+      "categoria": "Pasabocas",
+      "cantidad": 1
     },
     {
       "id": "45",
@@ -421,7 +467,8 @@
       "peso": "G",
       "precio": "7.450",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185422-300-300?v=1768494113&width=300&height=300&aspect=true",
-      "categoria": "Pasabocas"
+      "categoria": "Pasabocas",
+      "cantidad": 1
     },
     {
       "id": "46",
@@ -430,7 +477,8 @@
       "peso": "G",
       "precio": "8.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/371409-300-300?v=1768495110&width=300&height=300&aspect=true",
-      "categoria": "Pasabocas"
+      "categoria": "Pasabocas",
+      "cantidad": 1
     },
     {
       "id": "47",
@@ -439,7 +487,8 @@
       "peso": "ml",
       "precio": "14.600",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/454730-300-300?v=1768496373&width=300&height=300&aspect=true",
-      "categoria": "Bebidas"
+      "categoria": "Bebidas",
+      "cantidad": 1
     },
     {
       "id": "48",
@@ -448,7 +497,8 @@
       "peso": "ml",
       "precio": "12.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186569-300-300?v=1768496446&width=300&height=300&aspect=true",
-      "categoria": "Bebidas"
+      "categoria": "Bebidas",
+      "cantidad": 1
     },
     {
       "id": "49",
@@ -457,7 +507,8 @@
       "peso": "ml",
       "precio": "19.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/197268-300-300?v=1768495108&width=300&height=300&aspect=true",
-      "categoria": "Bebidas"
+      "categoria": "Bebidas",
+      "cantidad": 1
     },
     {
       "id": "50",
@@ -466,7 +517,8 @@
       "peso": "ml",
       "precio": "14.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/207594-300-300?v=1768496384&width=300&height=300&aspect=true",
-      "categoria": "Bebidas"
+      "categoria": "Bebidas",
+      "cantidad": 1
     },
     {
       "id": "51",
@@ -475,7 +527,8 @@
       "peso": "ml",
       "precio": "3.000",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186505-300-300?v=1768494007&width=300&height=300&aspect=true",
-      "categoria": "Bebidas"
+      "categoria": "Bebidas",
+      "cantidad": 1
     },
     {
       "id": "52",
@@ -484,7 +537,8 @@
       "peso": "ml",
       "precio": "7.350",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/440041-300-300?v=1768495042&width=300&height=300&aspect=true",
-      "categoria": "Bebidas"
+      "categoria": "Bebidas",
+      "cantidad": 1
     },
     {
       "id": "53",
@@ -493,7 +547,8 @@
       "peso": "G",
       "precio": "57.150",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/170054-300-300?v=1768494883&width=300&height=300&aspect=true",
-      "categoria": "Alimentos para Mascostas"
+      "categoria": "Alimentos para Mascostas",
+      "cantidad": 1
     },
     {
       "id": "54",
@@ -502,7 +557,8 @@
       "peso": "G",
       "precio": "10.400",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205581-300-300?v=1768497893&width=300&height=300&aspect=true",
-      "categoria": "Alimentos para Mascostas"
+      "categoria": "Alimentos para Mascostas",
+      "cantidad": 1
     },
     {
       "id": "55",
@@ -511,7 +567,8 @@
       "peso": "G",
       "precio": "61.550",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/204958-300-300?v=1768496962&width=300&height=300&aspect=true",
-      "categoria": "Alimentos para Mascostas"
+      "categoria": "Alimentos para Mascostas",
+      "cantidad": 1
     },
     {
       "id": "56",
@@ -520,7 +577,8 @@
       "peso": "G",
       "precio": "70.300",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/468241-300-300?v=1768495105&width=300&height=300&aspect=true",
-      "categoria": "Alimentos para Mascostas"
+      "categoria": "Alimentos para Mascostas",
+      "cantidad": 1
     },
     {
       "id": "57",
@@ -529,7 +587,8 @@
       "peso": "G",
       "precio": "191.500",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/462710-300-300?v=1768490038&width=300&height=300&aspect=true",
-      "categoria": "Alimentos para Mascostas"
+      "categoria": "Alimentos para Mascostas",
+      "cantidad": 1
     },
     {
       "id": "58",
@@ -538,10 +597,21 @@
       "peso": "G",
       "precio": "4.300",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/199911-300-300?v=1768497509&width=300&height=300&aspect=true",
-      "categoria": "Alimentos para Mascostas"
+      "categoria": "Alimentos para Mascostas",
+      "cantidad": 1
     }
   ],
   "favoritos": [
+    {
+      "id": "13",
+      "nombre": "Lomo de cerdo congelado en bandeja x 500gr",
+      "contenidoNeto": "500",
+      "peso": "G",
+      "precio": "12.700",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203840-300-300?v=1768491155&width=300&height=300&aspect=true",
+      "categoria": "Carnes & Mariscos",
+      "cantidad": 1
+    },
     {
       "id": "1",
       "nombre": "Lenteja Diana x 500gr",
@@ -549,46 +619,64 @@
       "peso": "G",
       "precio": "3.700",
       "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
-      "categoria": "Despensa"
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
-      "id": "48",
-      "nombre": "Jugo Hit Surtido Brick x200ml Pague 10 lleve 12",
-      "contenidoNeto": "200",
-      "peso": "ml",
-      "precio": "12.400",
-      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186569-300-300?v=1768496446&width=300&height=300&aspect=true",
-      "categoria": "Bebidas"
+      "id": "2",
+      "nombre": "Sal Refisal bolsa x 1000gr",
+      "contenidoNeto": "1000",
+      "peso": "G",
+      "precio": "1.800",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
+      "categoria": "Despensa",
+      "cantidad": 1
     }
   ],
   "carrito": [
     {
-      "id": "7",
-      "nombre": "Banano Urabá x 500gr",
+      "id": "1",
+      "nombre": "Lenteja Diana x 500gr",
       "contenidoNeto": "500",
       "peso": "G",
-      "precio": "1.590",
-      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205432-300-300?v=1768430086&width=300&height=300&aspect=true",
-      "categoria": "Frutas & Verduras"
+      "precio": "3.700",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-300-300?v=1768360932&width=300&height=300&aspect=true",
+      "categoria": "Despensa",
+      "cantidad": 1
     },
     {
-      "id": "25",
-      "nombre": "Leche deslactosada Colanta bolsa x6und x 1000ml c-u",
-      "contenidoNeto": "1000",
+      "id": "51",
+      "nombre": "Gatorade Mandarina pet x500ml",
+      "contenidoNeto": "500",
       "peso": "ml",
-      "precio": "29.000",
-      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/426315-300-300?v=1768488576&width=300&height=300&aspect=true",
-      "categoria": "Lacteos & Refrigerados"
+      "precio": "3.000",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186505-300-300?v=1768494007&width=300&height=300&aspect=true",
+      "categoria": "Bebidas",
+      "cantidad": 1
     },
     {
-      "id": "53",
-      "nombre": "Alimento perro 8kg adultos Dogourmet carne/parrilla",
-      "contenidoNeto": "8000",
+      "id": "2",
+      "nombre": "Sal Refisal bolsa x 1000gr",
+      "contenidoNeto": "1000",
       "peso": "G",
-      "precio": "57.150",
-      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/170054-300-300?v=1768494883&width=300&height=300&aspect=true",
-      "categoria": "Alimentos para Mascostas"
+      "precio": "1.800",
+      "imagenURL": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192053-300-300?v=1768360967&width=300&height=300&aspect=true",
+      "categoria": "Despensa",
+      "cantidad": 1
     }
   ],
-  "usuario": []
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "mario123",
+      "contrasena": "1234",
+      "rol": "administrador"
+    },
+    {
+      "id": "2",
+      "nombre": "julian123",
+      "contrasena": "1234",
+      "rol": "administrador"
+    }
+  ]
 }

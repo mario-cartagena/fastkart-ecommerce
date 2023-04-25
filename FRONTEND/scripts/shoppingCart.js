@@ -2,6 +2,7 @@
 const URL_API = "http://localhost:3000/";
 const containerProducts = document.querySelector(".container-products");
 
+
 const getProducts = async (url) => {
     try {
       const {data} = await axios.get(url+"carrito");
@@ -23,7 +24,7 @@ const deleteProductsCart = async (url, id) => {
 };
 
 const counterProduct = () => {
-    let cantidad = 0;
+    let cantidad = 1;
     const addBtn = document.querySelector(".qty-right-plus")
     const subBtn = document.querySelector(".qty-left-minus ")
     const qtyInput = document.querySelector(".qty-input")
@@ -36,19 +37,19 @@ const counterProduct = () => {
            qtyInput.value = 0;
        }else{
            qtyInput.value = parseInt(qtyInput.value)-1;
+           cantidad--;
        }
      });
  }
 
+const valorTotal = document.querySelector(".total-price");
+const countProducts = document.querySelector(".cantidad")
 const printProducts = (products, container) => {
     container.innerHTML = '';
+    let total = 0;
+    let totalOfProducts = 0;
       products.forEach(product => {
           container.innerHTML += `
-          <div class="col-xxl-9">
-                    <div class="cart-table">
-                        <div class="table-responsive-xl">
-                            <table class="table">
-                                <tbody>
                                     <tr class="product-box-contain">
                                         <td class="product-detail">
                                             <div class="product border-0">
@@ -66,10 +67,10 @@ const printProducts = (products, container) => {
                                                                 By:</span> Fresho</li>
 
                                                         <li class="text-content"><span
-                                                                class="text-title">Quantity</span> - ${product.contenidoNeto} ${product.peso}
+                                                                class="text-title">Content</span> - ${product.contenidoNeto} ${product.peso}
                                                         </li>
                                                         <li class="text-content"><span
-                                                                class="text-title">Cantidad</span> - 0
+                                                                class="text-title">Quantity - <p class="cantidad">${product.cantidad}</p></span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -78,8 +79,8 @@ const printProducts = (products, container) => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h5>$${product.precio} <del class="text-content">$45.68</del></h5>
-                                            <h6 class="theme-color">You Save : $20.68</h6>
+                                            <h5>$${product.precio}</h5>
+                                            <h6 class="theme-color">You Save : $${product.precio}</h6>
                                         </td>
 
                                         <td class="quantity">
@@ -87,15 +88,15 @@ const printProducts = (products, container) => {
                                             <div class="quantity-price">
                                                 <div class="cart_qty">
                                                     <div class="input-group">
-                                                        <button type="button" class="btn qty-left-minus"
+                                                        <button type="button" data-counter="minus" class="btn qty-left-minus"
                                                             data-type="minus" data-field="">
-                                                            <i class="fa fa-minus ms-0" aria-hidden="true"></i>
+                                                            <i class="fa fa-minus ms-0" data-counter="minus" aria-hidden="true"></i>
                                                         </button>
                                                         <input class="form-control input-number qty-input" type="text"
                                                             name="quantity" value="0">
-                                                        <button type="button" class="btn qty-right-plus"
+                                                        <button type="button" data-counter="plus" class="btn qty-right-plus"
                                                             data-type="plus" data-field="">
-                                                            <i class="fa fa-plus ms-0" aria-hidden="true"></i>
+                                                            <i class="fa fa-plus ms-0" data-counter="plus" aria-hidden="true"></i>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -104,7 +105,7 @@ const printProducts = (products, container) => {
 
                                         <td class="subtotal">
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>$35.10</h5>
+                                            <h5>$${product.precio}</h5>
                                         </td>
 
                                         <td class="save-remove">
@@ -113,20 +114,17 @@ const printProducts = (products, container) => {
                                             <a class="remove close_button" href="javascript:void(0)" data-id=${product.id} data-button="delete">Remove</a>
                                         </td>
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
         `;
-      }); 
+        total = total + parseInt(product.cantidad * product.precio);
+      });
+      valorTotal.innerText = `${total}`;
+      countProducts.innerText = totalOfProducts;
   };
 
     // --------------------- Ejecución ------------------------
 document.addEventListener("DOMContentLoaded", async () => {
     const productsCart = await getProducts(URL_API);
     printProducts(productsCart, containerProducts);
-    counterProduct();
 });
 
 // Delete product shopping cart
@@ -136,5 +134,25 @@ document.addEventListener("click", async(event) => {
     if(buttonDelete){
         await deleteProductsCart(URL_API, productId);
         Swal.fire('¡Producto Eliminado!', 'El producto se ha eliminado de la lista de favoritos', 'success');
+    }
+});
+
+document.addEventListener("click", async(event)=>{
+    const carrito = await getProducts(URL_API);
+    const cantidadCont = document.querySelector(".cantidad");
+    let cantidad = 1;
+    const qtyInput = document.querySelector(".qty-input")
+    const buttonCounter = event.target.getAttribute("data-counter")
+    if(buttonCounter == "plus"){
+        qtyInput.value = parseInt(qtyInput.value)+1;
+        cantidadCont.textContent++;
+    //    cantidad++;
+    }else if(buttonCounter == "minus"){
+        if(qtyInput.value <=0){
+            qtyInput.value = 0;
+        }else{
+            qtyInput.value = parseInt(qtyInput.value)-1;
+            cantidadCont.textContent--;
+        }
     }
 });

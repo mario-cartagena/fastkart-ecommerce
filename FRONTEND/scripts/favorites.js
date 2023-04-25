@@ -51,7 +51,7 @@ const postProductsCart = async (url, product) => {
     }
   };
 
-const printProducts = (products, container) => {
+const printProducts = (products, container) => {  
     container.innerHTML = '';
       products.forEach(product => {
           container.innerHTML += `

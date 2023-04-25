@@ -1,6 +1,7 @@
 // --------------------- Variables ------------------------
 const URL_API = "http://localhost:3000/";
 const containerProducts = document.querySelector(".productContainer");
+const titleModal = document.querySelector(".modal-title");
 
 // --------------------- Funciones ------------------------
 const getProducts = async (url) => {
@@ -53,22 +54,6 @@ const postProductsCart = async (url, product) => {
   }
 };
 
-// const counterProduct = () => {
-//   const addBtn = document.querySelector(".qty-right-plus");
-//   const subBtn = document.querySelector(".qty-left-minus ");
-//   const qtyInput = document.querySelector(".qty-input");
-//   addBtn.addEventListener("click", () => {
-//     qtyInput.value = parseInt(qtyInput.value)+1;
-//   });
-//   subBtn.addEventListener("click", () => {
-//     if(qtyInput.value <=0){
-//         qtyInput.value = 0;
-//     }else{
-//         qtyInput.value = parseInt(qtyInput.value)-1;
-//     }
-//   });
-// }
-
 const printProducts = (products, container) => {
   container.innerHTML = '';
     products.forEach(product => {
@@ -84,18 +69,19 @@ const printProducts = (products, container) => {
                       />
                     </a>
                     <ul class="product-option">
-                      <li
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="View"
+                    <li
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="View"
                       >
-                        <a
-                        
-                          data-bs-toggle="modal"
-                          data-bs-target="#view"
-                        >
-                        <span class="material-symbols-outlined">visibility</span>
-                        </a>
+                    <a
+                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#view"
+                    >
+                    <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                  </li>
                       </li>
 
                       <li
@@ -174,7 +160,6 @@ const filterByCategory = (products, event) =>{
 document.addEventListener("DOMContentLoaded", async () => {
   const productos = await getProducts(URL_API);
   printProducts(productos, containerProducts);
-  // await getProductsFavorites(URL_API);
   await getProductsCart(URL_API)
 });
 

@@ -301,6 +301,8 @@ section{
 }
 .cart-table table tbody tr td.product-detail .product .product-detail ul li span {
     font-weight: 500;
+    display: flex;
+    gap: 4px;
 }
 .text-title {
     color: #222 !important;

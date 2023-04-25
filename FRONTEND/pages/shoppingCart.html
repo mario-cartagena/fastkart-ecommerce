@@ -26,7 +26,7 @@
      src="https://kit.fontawesome.com/1b38f3e0d7.js"
      crossorigin="anonymous"
    ></script>
-    <title>Fastkart</title>
+    <title>Cart</title>
   </head>
   <body>
     <!-- Header -->
@@ -278,12 +278,76 @@
 
     <section class="cart-section section-b-space">
         <div class="container-fluid-lg">
-            <div class="row g-sm-5 g-3 container-products">
+            <div class="row g-sm-5 g-3">
                 <div class="col-xxl-9">
                     <div class="cart-table">
                         <div class="table-responsive-xl">
                             <table class="table">
-                                <tbody>
+                                <tbody class="container-products">
+                                    <tr class="product-box-contain">
+                                        <td class="product-detail">
+                                            <div class="product border-0">
+                                                <a href="product-left-thumbnail.html" class="product-image">
+                                                    <img src="../assets/images/vegetable/product/1.png"
+                                                        class="img-fluid blur-up lazyload" alt="">
+                                                </a>
+                                                <div class="product-detail">
+                                                    <ul>
+                                                        <li class="name">
+                                                            <a href="product-left-thumbnail.html">Bell pepper</a>
+                                                        </li>
+
+                                                        <li class="text-content"><span class="text-title">Sold
+                                                                By:</span> Fresho</li>
+
+                                                        <li class="text-content"><span
+                                                                class="text-title">Quantity</span> - 500 g
+                                                        </li>
+                                                        <li class="text-content"><span
+                                                          class="text-title">Quantity - <p class="cantidad">0</p></span>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="price">
+                                            <h4 class="table-title text-content">Price</h4>
+                                            <h5>$35.10 <del class="text-content">$45.68</del></h5>
+                                            <h6 class="theme-color">You Save : $20.68</h6>
+                                        </td>
+
+                                        <td class="quantity">
+                                            <h4 class="table-title text-content">Qty</h4>
+                                            <div class="quantity-price">
+                                                <div class="cart_qty">
+                                                    <div class="input-group">
+                                                        <button type="button" class="btn qty-left-minus"
+                                                            data-type="minus" data-field="">
+                                                            <i class="fa fa-minus ms-0" aria-hidden="true"></i>
+                                                        </button>
+                                                        <input class="form-control input-number qty-input" type="text"
+                                                            name="quantity" value="0">
+                                                        <button type="button" class="btn qty-right-plus"
+                                                            data-type="plus" data-field="">
+                                                            <i class="fa fa-plus ms-0" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="subtotal">
+                                            <h4 class="table-title text-content">Total</h4>
+                                            <h5 class="total-price">$35.10</h5>
+                                        </td>
+
+                                        <td class="save-remove">
+                                            <h4 class="table-title text-content">Action</h4>
+                                            <a class="save notifi-wishlist" href="javascript:void(0)">Save for later</a>
+                                            <a class="remove close_button" href="javascript:void(0)">Remove</a>
+                                        </td>
+                                    </tr>
                                     <tr class="product-box-contain">
                                         <td class="product-detail">
                                             <div class="product border-0">
@@ -394,12 +458,11 @@
                         <div class="button-group cart-button">
                             <ul>
                                 <li>
-                                    <button onclick="location.href = 'checkout.html';"
-                                        class="btn btn-animation proceed-btn fw-bold">Process To Checkout</button>
+                                  <button type="button" class="btn btn-animation proceed-btn fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Process To Checkout</button>
                                 </li>
 
                                 <li>
-                                    <button onclick="location.href = 'index.html';"
+                                    <button onclick="location.href = '../index.html';"
                                         class="btn btn-light shopping-button text-dark">
                                         <i class="fa-solid fa-arrow-left-long"></i>Return To Shopping</button>
                                 </li>
@@ -621,6 +684,34 @@
         </div>
       </div>
     </footer>
+    <!-- Modal Process To Checkout -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Checkout</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="recipient-name" placeholder="Nombre">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="recipient-direction" placeholder="Dirección">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="recipient-telefono" placeholder="Teléfono">
+              </div>      
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Favorites.js -->

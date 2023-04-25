@@ -12,7 +12,7 @@
       href="../assets/images/favicon/1.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/panelAdmin.css" />
 
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -33,7 +33,7 @@
       src="https://kit.fontawesome.com/1b38f3e0d7.js"
       crossorigin="anonymous"
     ></script>
-    <title>Login</title>
+    <title>Panel Admin</title>
   </head>
   <body>
     <!-- Header -->
@@ -264,7 +264,7 @@
         <div class="row">
           <div class="col-12">
             <div class="breadscrumb-contain">
-              <h2>Login</h2>
+              <h2>Panel Administrador</h2>
               <nav>
                 <ol class="breadcrumb mb-0">
                   <li class="breadcrumb-item">
@@ -273,7 +273,7 @@
                     </a>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Login
+                    Panel Administrador
                   </li>
                 </ol>
               </nav>
@@ -283,53 +283,121 @@
       </div>
     </section>
     <!-- Breadcrumb Section End -->
-    <section class="ftco-section" style="margin-bottom: 3rem;">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12 col-lg-10">
-            <div class="wrap">
-              <div class="login-wrap p-4 p-md-5">
-                <div class="d-flex">
-                  <div class="w-100">
-                    <h3 class="mb-4">Welcome To Fastkart</h3>
-                  </div>
+    
+    <!-- Productos -->
+    <section class="products">
+        <div class="container-fluid-lg">
+          <div class="row g-sm-4 g-3">
+            <!-- Categorías -->
+            <div class="col-xxl-3 col-xl-4 d-none d-xl-block">
+              <div class="category-menu">
+                <h3>Category</h3>
+                <ul class="list-unstyled container__categories">
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/vegetable.svg" />
+                      <h5>
+                        <a class="btn__categories">Frutas & Verduras</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/cup.svg" />
+                      <h5>
+                        <a class="btn__categories">Bebidas</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/meats.svg" />
+                      <h5>
+                        <a class="btn__categories">Carnes & Mariscos</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/breakfast.svg" />
+                      <h5>
+                        <a class="btn__categories">Panadería & Pastelería</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/frozen.svg" />
+                      <h5>
+                        <a class="btn__categories">Alimentos Congelados</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/biscuit.svg" />
+                      <h5>
+                        <a class="btn__categories">Pasabocas</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/grocery.svg" />
+                      <h5>
+                        <a class="btn__categories">Despensa</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/drink.svg" />
+                      <h5>
+                        <a class="btn__categories">Vinos & Licores</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/milk.svg" />
+                      <h5>
+                        <a class="btn__categories">Lacteos & Refrigerados</a>
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category-list">
+                      <img src="../assets/images/svg/1/pet.svg" />
+                      <h5>
+                        <a class="btn__categories">Alimentos para Mascostas</a>
+                      </h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xxl-9 col-xl-8">
+              <div class="mb-3">
+                <h3>Top Save Today</h3>
+                <div class="w-100 d-flex">
+                  <hr class="bg-green w-25 separador" />
+                  <span
+                    ><img src="../assets/images/svg/3/leaf.svg" alt="Icono Hoja"
+                  /></span>
+                  <hr class="bg-green w-25 separador" />
                 </div>
-                <form action="#" class="signin-form">
-                  <div class="form-group mb-3">
-                    <label class="label" for="name">Username</label>
-                    <input
-                      type="text"
-                      id="name"
-                      class="form-control"
-                      placeholder="Username"
-                      required=""
-                    />
-                  </div>
-                  <div class="form-group mb-3">
-                    <label class="label" for="password">Password</label>
-                    <input
-                      type="password"
-                      id="password"
-                      class="form-control"
-                      placeholder="Password"
-                      required=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <button
-                      type="submit"
-                      class="form-control btn btn-primary rounded submit px-3"
-                    >
-                      Log In
-                    </button>
-                  </div>
-                </form>
+                <p class="title-p">
+                  Don't miss this opportunity at a special discount just for this
+                  week.
+                </p>
+              </div>
+              <!-- Tabla Productos -->
+              <div class="row m-0 productContainer">
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <footer class="section-t-space">
       <div class="container-fluid-lg">
@@ -546,7 +614,7 @@
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Login.js -->
-    <script src="../scripts/login.js" type="module"></script>
+    <script src="../scripts/panelAdmin.js" type="module"></script>
     <!-- Scripts para Iconos Feather -->
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="../scripts/icons.js"></script>
